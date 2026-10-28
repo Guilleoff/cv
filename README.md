@@ -1,25 +1,30 @@
-# Guillermo Ferreyra — CV web trilingüe
+# Guillermo Ferreyra · Currículum web trilingüe (actualizado a octubre de 2026)
 
-Versión final del sitio verde y dorado, sin cambios en la estructura de sus secciones. Incluye traducción completa de la **página web** al español, inglés y japonés.
+Web estática autocontenida para GitHub Pages. Publica `index.html` y `CV_Guillermo_Omar_Ferreyra_2026.pdf` en la raíz de tu repositorio. La página incluye ES, EN, 日本語 y selector funcional.
 
-## Uso
+## Actualizaciones documentadas
+- Seis presentaciones en congresos acreditadas en certificados (2016, 2017, dos en 2018 y dos en 2021).
+- Numeración corregida de los congresos UBA: 2016 VIII, 2017 IX, 2018 X.
+- VIII Congreso Marplatense 2018: certificado de expositor, sin título explícito del trabajo.
+- Capítulo en RIL Editores (2023): «Prejuicios hacia la diversidad sexual en profesionales de la salud mental», coautoría de Julieta Olivera y Guillermo Ferreyra; libro *Psicoterapia y salud mental en personas de la diversidad sexual y de género (LGBT+): Investigación y práctica en Iberoamérica*. ISBN 978-956-01-1480-8.
+- Dirección en UADE (2023–2025) del proyecto «Psicoterapia compatible para el tratamiento de personas pertenecientes a minorías sexuales o de género desde la perspectiva de pacientes y terapeutas». Se distingue del antecedente UdeMM 2020–2021.
+- Se preservan el diseño verde/dorado, la estructura, filtros, CV y email sin LinkedIn.
 
-- Abrí `index.html` en Chrome o Firefox; los estilos y traducciones están incorporados en el mismo archivo.
-- Selector de idioma **ES / EN / 日本語** en la cabecera, accesible desde escritorio y celular.
-- El cambio de idioma se realiza sin recargar; el filtro de trabajos conserva su selección.
-- Se recuerda el idioma en el navegador cuando el almacenamiento local está permitido. También funcionan `?lang=es`, `?lang=en`, `?lang=ja` para enlaces directos.
-- El CV descargable es el PDF original en **español**; la traducción solicitada corresponde a la página web.
+## Trazabilidad
+Se analizaron 17 certificados del archivo proporcionado. Las asistencias a cursos no se presentan como ponencias. En la bibliografía pública consultada aparece la grafía «Oliveira, J.» para la coautora del capítulo; la investigadora señalada y vinculada al proyecto es Julieta Olivera. Confirmar la página de título del capítulo si se requiere cita bibliográfica plenamente normalizada con páginas.
 
-## Publicar en GitHub Pages
+Libro: https://rileditores.com/producto/psicoterapia-y-salud-mental-en-personas-de-la-diversidad-sexual-y-de-genero-lgbt-investigacion-y-practica-en-iberoamerica/
 
-1. Descomprimir el ZIP.
-2. Subir `index.html`, `CV_Guillermo_Omar_Ferreyra_2026.pdf` y `README.md` a la raíz del repositorio.
-3. En GitHub: Settings → Pages → Deploy from a branch → main / (root).
+Actas Tucumán: https://www.psicologia.unt.edu.ar/gestor/wp-content/uploads/2023/06/Libro-de-Actas-VII-Congreso-.pdf
 
-El contenido visible de investigación, cursos, trayectoria y publicaciones está traducido. Los nombres propios de instituciones se mantienen en su denominación original en inglés cuando corresponde; en japonés se ofrece su transliteración o traducción, con siglas para identificación.
+## GitHub Pages
+Para tu repositorio `Guilleoff/cv`, subí `index.html` y el PDF al directorio raíz de la rama `main`, reemplazando los anteriores. El sitio resultante está en `https://guilleoff.github.io/cv/`.
 
-## Actualizar
+## Tutorías de Trabajos Integradores Finales — UdeMM
 
-En `index.html`, el objeto `window.SITIO` contiene el contenido en español. Las traducciones al inglés y al japonés aparecen en el bloque de traducciones del script final. Para incorporar un nuevo trabajo, añadilo en los tres idiomas. Los trabajos publicados y las presentaciones deben diferenciarse editorialmente.
+Se incorporó una selección de tres tutorías académicas acreditadas / informadas:
+- **2020** · Marta Alicia Aguirre · «El Estrago Materno en adolescentes de 13 a 20 años».
+- **2021** · Verónica Paola Stigliani · «Estereotipos de Género en Mujeres Heterocisgénero que ejercen Psicoanálisis».
+- **2022** · Liliana Finger · «Expresiones afectivas e inhibiciones en masculinidades cisgeneros de más de 50 años».
 
-**Privacidad:** no contiene datos de pacientes ni información clínica identificable.
+La función está identificada como tutoría/dirección de TIF de grado y no como autoría de publicaciones propias. Se omiten legajos, evaluaciones y archivos académicos internos de las estudiantes. El contenido de la nueva sección se traduce al inglés y japonés mediante el mismo selector del resto del sitio.

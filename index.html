@@ -179,6 +179,21 @@ html[lang="ja"] .section-head{gap:30px}
 @media(max-width:410px){.brand-copy strong{font-size:10px}.brand-seal{height:34px;width:34px;font-size:16px}.lang-option{font-size:9px;padding:8px 6px}.menu-button{padding:9px;font-size:10px}}
 @media(max-width:345px){.brand-copy strong{display:none}.brand{gap:0}}
 
+
+/* Tutorías de TIF — integrada a la sección de docencia */
+.tif-panel{margin-top:48px;padding:34px 34px 10px;border:1px solid var(--gold);background:rgba(7,47,36,.35);position:relative}
+.tif-panel:before{content:'';position:absolute;inset:7px;border:1px solid rgba(238,212,156,.2);pointer-events:none}
+.tif-heading{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(220px,.75fr);gap:30px;align-items:end;padding-bottom:28px}
+.tif-kicker{display:block;font:10px/1.6 var(--mono);color:var(--gold-light);letter-spacing:.12em;margin-bottom:15px}
+.tif-heading h3{font:normal clamp(27px,3vw,39px)/1.15 var(--serif);letter-spacing:-.035em;color:#f4f4df;margin:0;max-width:650px}
+.tif-sub{font:13px/1.65 var(--sans);color:#c7dcca;margin:0;max-width:290px}
+.tif-row{display:grid;grid-template-columns:78px minmax(0,1fr);gap:23px;border-top:1px solid rgba(238,212,156,.36);padding:23px 8px 25px}
+.tif-row time{font:16px/1.4 var(--mono);color:var(--gold-light)}
+.tif-row h4{font:normal clamp(19px,2vw,25px)/1.3 var(--serif);color:#f5f6ec;margin:0 0 8px;max-width:890px}
+.tif-row p{font:11px/1.6 var(--mono);color:#b9d1be;margin:0}
+@media(max-width:780px){.tif-panel{margin-top:30px;padding:24px 19px 4px}.tif-heading{grid-template-columns:1fr;gap:14px}.tif-sub{max-width:100%}.tif-row{grid-template-columns:58px minmax(0,1fr);gap:10px}.tif-row h4{font-size:20px}}
+@media(max-width:390px){.tif-row{grid-template-columns:1fr;gap:7px}.tif-row time{font-size:13px}.tif-heading h3{font-size:27px}}
+
 </style>
 </head>
 <body>
@@ -207,8 +222,8 @@ html[lang="ja"] .section-head{gap:30px}
 </div></section>
 <section class="section dark" id="investigacion"><div class="container"><p class="section-tag">02 / Investigación</p><div class="section-head"><h2>Investigación.</h2><p class="section-intro">Una selección de proyectos institucionales y líneas de trabajo, con sus períodos y estados claramente identificados.</p></div><div id="research-list" class="research-list"></div></div></section>
 <section class="section sage" id="produccion"><div class="container"><p class="section-tag">03 / Archivo académico</p><div class="section-head"><h2>Producción académica.</h2></div>
-<div class="archive-frame"><div class="archive-controls"><span id="result-count" class="archive-count" aria-live="polite"></span><div class="filters" role="group" aria-label="Filtrar trabajos"><button class="filter active" data-filter="todos" aria-pressed="true">Todos</button><button class="filter" data-filter="articulos" aria-pressed="false">Artículos</button><button class="filter" data-filter="documentos" aria-pressed="false">Documentos</button><button class="filter" data-filter="congresos" aria-pressed="false">Congresos</button><button class="filter" data-filter="formacion" aria-pressed="false">Extensión</button></div></div><div id="work-list"></div></div>
-<p class="archive-note">Se distinguen las comunicaciones a congresos de los artículos de revista. Los enlaces a textos completos se incorporan solo cuando el material está publicado o autorizado para difusión.</p>
+<div class="archive-frame"><div class="archive-controls"><span id="result-count" class="archive-count" aria-live="polite"></span><div class="filters" role="group" aria-label="Filtrar trabajos"><button class="filter active" data-filter="todos" aria-pressed="true">Todos</button><button class="filter" data-filter="articulos" aria-pressed="false">Artículos</button><button class="filter" data-filter="libros" aria-pressed="false">Capítulos de libro</button><button class="filter" data-filter="documentos" aria-pressed="false">Documentos</button><button class="filter" data-filter="congresos" aria-pressed="false">Congresos</button><button class="filter" data-filter="formacion" aria-pressed="false">Extensión</button></div></div><div id="work-list"></div></div>
+<p class="archive-note">Las publicaciones en libros, las comunicaciones a congresos y los trabajos en desarrollo se identifican por separado. Se enlazan únicamente materiales disponibles públicamente o sus fichas editoriales.</p>
 </div></section>
 <section class="section medium" id="docencia"><div class="container"><p class="section-tag">04 / Docencia</p><div class="section-head"><h2>Materias dictadas.</h2><p class="section-intro">Materias de grado, formación profesional y extensión universitaria.</p></div>
 <div class="teaching-grid">
@@ -218,6 +233,16 @@ html[lang="ja"] .section-head{gap:30px}
 <article class="course"><small>UDEMM / JTP · DESDE 2017</small><span class="course-number">04</span><h3>Fundamentos de Psicoanálisis I</h3><p>Docencia y acompañamiento académico en formación de grado.</p></article>
 <article class="course"><small>UDEMM / JTP · DESDE 2017</small><span class="course-number">05</span><h3>Fundamentos de Psicoanálisis II</h3><p>Continuidad docente en el área de psicoanálisis.</p></article>
 <article class="course"><small>UDEMM / ANTECEDENTE</small><span class="course-number">06</span><h3>Lenguaje y Comunicación</h3><p>Ex docente de la cátedra.</p></article>
+</div>
+<div class="tif-panel" aria-labelledby="tif-heading">
+  <div class="tif-heading"><div><span class="tif-kicker">UDEMM / TUTORÍAS ACADÉMICAS</span>
+  <h3 id="tif-heading">Dirección y tutoría de Trabajos Integradores Finales</h3></div>
+  <p class="tif-sub">Selección de trabajos tutorados, entre otras tutorías realizadas en la Licenciatura en Psicología.</p></div>
+  <div class="tif-list">
+    <article class="tif-row"><time>2022</time><div><h4>Expresiones afectivas e inhibiciones en masculinidades cisgeneros de más de 50 años</h4><p>Liliana Finger · Tutor del TIF</p></div></article>
+    <article class="tif-row"><time>2021</time><div><h4>Estereotipos de Género en Mujeres Heterocisgénero que ejercen Psicoanálisis</h4><p>Verónica Paola Stigliani · Tutor del TIF</p></div></article>
+    <article class="tif-row"><time>2020</time><div><h4>El Estrago Materno en adolescentes de 13 a 20 años</h4><p>Marta Alicia Aguirre · Tutor del TIF</p></div></article>
+  </div>
 </div></div></section>
 <section class="section light" id="trayectoria"><div class="container"><p class="section-tag">05 / Trayectoria profesional</p><div class="section-head"><h2>Experiencia profesional.</h2><p class="section-intro">Experiencia clínica, docencia, investigación y coordinación de dispositivos grupales.</p></div><div id="experience-list" class="career-list"></div>
 <div class="education"><article><small>FORMACIÓN / POSGRADO</small><h3>Maestría en Estudios y Políticas de Género</h3><p>Universidad Nacional de Tres de Febrero · En curso.</p></article><article><small>FORMACIÓN / GRADO</small><h3>Licenciatura en Psicología</h3><p>Universidad de la Marina Mercante · 2012–2017. Promedio general: 8,0.</p></article></div>
@@ -228,165 +253,214 @@ html[lang="ja"] .section-head{gap:30px}
 <script>
 /* Datos editables: títulos, experiencia y archivo académico */
 window.SITIO = {
-  updated: "Octubre de 2026",
-  name: "Guillermo Omar Ferreyra",
-  contact: {
-    email: "guilleoff@gmail.com"
+  "updated": "Octubre de 2026",
+  "name": "Guillermo Omar Ferreyra",
+  "contact": {
+    "email": "guilleoff@gmail.com"
   },
-  research: [
+  "research": [
     {
-      number: "01",
-      period: "2025 — 2026",
-      place: "UADE · Proyecto A23S17",
-      title: "Apuestas online, videojuegos y adolescencias",
-      description: "Investigación cualitativa sobre apuestas online, compras digitales y lógicas de plataforma, con trabajo con familias, docentes y profesionales. Incluye producción de materiales de orientación y actividades preventivas.",
-      themes: [
+      "number": "01",
+      "period": "2025 — 2026",
+      "place": "UADE · Proyecto A23S17",
+      "title": "Apuestas online, videojuegos y adolescencias",
+      "description": "Investigación cualitativa sobre apuestas online, compras digitales y lógicas de plataforma, con trabajo con familias, docentes y profesionales. Incluye producción de materiales de orientación y actividades preventivas.",
+      "themes": [
         "Adolescencias",
         "Plataformas digitales",
         "Prevención"
       ],
-      state: "Proyecto de investigación"
+      "state": "Proyecto de investigación"
     },
     {
-      number: "02",
-      period: "EN DESARROLLO",
-      place: "UNTREF · Maestría en Estudios y Políticas de Género",
-      title: "Grindr y la construcción del yo deseable",
-      description: "Proyecto de tesis sobre deseo, presentación de sí y formas contemporáneas de subjetivación entre varones gays en CABA, en diálogo con el psicoanálisis, Foucault, Butler y los estudios de género.",
-      themes: [
+      "number": "02",
+      "period": "2023 — 2025",
+      "place": "UADE · Dirección de investigación",
+      "title": "Psicoterapia compatible para personas pertenecientes a minorías sexuales o de género",
+      "description": "Dirección del proyecto «Psicoterapia compatible para el tratamiento de personas pertenecientes a minorías sexuales o de género desde la perspectiva de pacientes y terapeutas». Investigación cualitativa sobre perspectivas clínicas y experiencias de atención.",
+      "themes": [
+        "Psicoterapia",
+        "Diversidad sexual y de género",
+        "Investigación cualitativa"
+      ],
+      "state": "Proyecto dirigido · concluido"
+    },
+    {
+      "number": "03",
+      "period": "EN DESARROLLO",
+      "place": "UNTREF · Maestría en Estudios y Políticas de Género",
+      "title": "Grindr y la construcción del yo deseable",
+      "description": "Proyecto de tesis sobre deseo, presentación de sí y formas contemporáneas de subjetivación entre varones gays en CABA, en diálogo con el psicoanálisis, Foucault, Butler y los estudios de género.",
+      "themes": [
         "Subjetividad",
         "Sexualidad",
         "Aplicaciones de citas"
       ],
-      state: "Proyecto de tesis"
+      "state": "Proyecto de tesis"
     },
     {
-      number: "03",
-      period: "2020 — 2021",
-      place: "UdeMM · Investigación",
-      title: "Psicoterapia y diversidad sexual y de género",
-      description: "Estudio de las perspectivas de pacientes y terapeutas sobre la compatibilidad de las intervenciones psicoterapéuticas con las experiencias de personas pertenecientes a minorías sexuales o de género.",
-      themes: [
+      "number": "04",
+      "period": "2020 — 2021",
+      "place": "UdeMM · Investigación",
+      "title": "Psicoterapia y diversidad sexual y de género",
+      "description": "Estudio de las perspectivas de pacientes y terapeutas sobre la compatibilidad de las intervenciones psicoterapéuticas con las experiencias de personas pertenecientes a minorías sexuales o de género.",
+      "themes": [
         "Clínica",
         "Diversidad",
         "Psicoterapia"
       ],
-      state: "Proyecto de investigación"
+      "state": "Proyecto de investigación"
     },
     {
-      number: "04",
-      period: "2018 — 2020",
-      place: "UdeMM · Investigación",
-      title: "Motivos de consulta en clínica psicoanalítica",
-      description: "Investigación sobre los motivos de consulta de personas adultas atendidas en una institución psicoterapéutica de orientación psicoanalítica de la Ciudad de Buenos Aires.",
-      themes: [
+      "number": "05",
+      "period": "2018 — 2020",
+      "place": "UdeMM · Investigación",
+      "title": "Motivos de consulta en clínica psicoanalítica",
+      "description": "Investigación sobre los motivos de consulta de personas adultas atendidas en una institución psicoterapéutica de orientación psicoanalítica de la Ciudad de Buenos Aires.",
+      "themes": [
         "Psicoanálisis",
         "Práctica clínica"
       ],
-      state: "Proyecto de investigación"
+      "state": "Proyecto de investigación"
     }
   ],
-  works: [
+  "works": [
     {
-      year: "2026",
-      category: "documentos",
-      type: "Guía de orientación",
-      status: "Documento elaborado · sin enlace público",
-      title: "Videojuegos, compras digitales y apuestas online",
-      detail: "Material de orientación para familias, docentes y profesionales, desarrollado a partir del proyecto UADE A23S17.",
-      url: ""
+      "year": "2026",
+      "category": "documentos",
+      "type": "Guía de orientación",
+      "status": "Material elaborado · sin enlace público",
+      "title": "Videojuegos, compras digitales y apuestas online",
+      "detail": "Material para familias e instituciones educativas del proyecto UADE A23S17. Publicación completa por confirmar.",
+      "url": ""
     },
     {
-      year: "2026",
-      category: "documentos",
-      type: "Escrito académico",
-      status: "Aprobado para presentación · verificar publicación",
-      title: "La pedagogía del límite después del negocio: apuestas online, adolescencia y dispositivos de limpieza simbólica",
-      detail: "Texto de reflexión e investigación sobre la responsabilidad adulta e institucional frente a los dispositivos digitales de apuestas.",
-      url: ""
+      "year": "2026",
+      "category": "documentos",
+      "type": "Trabajo académico",
+      "status": "Presentación aceptada · publicación por verificar",
+      "title": "La pedagogía del límite después del negocio: apuestas online y adolescencias",
+      "detail": "Trabajo de investigación y reflexión sobre responsabilidad adulta e institucional ante plataformas de apuestas.",
+      "url": ""
     },
     {
-      year: "2018",
-      category: "congresos",
-      type: "Comunicación en congreso",
-      status: "Presentación académica",
-      title: "Motivos de consulta en institución psicoterapéutica de orientación psicoanalítica",
-      detail: "VIII Congreso Marplatense de Psicología de Alcance Internacional · Universidad Nacional de Mar del Plata.",
-      url: ""
+      "year": "2023",
+      "category": "libros",
+      "type": "Capítulo de libro",
+      "status": "Publicado · RIL Editores · ISBN 978-956-01-1480-8",
+      "title": "Prejuicios hacia la diversidad sexual en profesionales de la salud mental",
+      "detail": "Coautoría: Julieta Olivera y Guillermo Ferreyra. En: Psicoterapia y salud mental en personas de la diversidad sexual y de género (LGBT+): Investigación y práctica en Iberoamérica. Eds.: C. Martínez, A. Tomicic, A. Brandelli Costa y M. Rueda.",
+      "url": "https://rileditores.com/producto/psicoterapia-y-salud-mental-en-personas-de-la-diversidad-sexual-y-de-genero-lgbt-investigacion-y-practica-en-iberoamerica/"
     },
     {
-      year: "2017",
-      category: "congresos",
-      type: "Comunicación en congreso",
-      status: "Presentación académica",
-      title: "Conexión y relación. Articulaciones a la luz de los dispositivos electrónicos",
-      detail: "VIII Congreso Internacional de Investigación y Práctica Profesional en Psicología · Universidad de Buenos Aires.",
-      url: ""
+      "year": "2021",
+      "category": "congresos",
+      "type": "Ponencia",
+      "status": "Expositor acreditado",
+      "title": "Hacia un psicoanálisis amplio: Perspectiva de género y derechos de las personas",
+      "detail": "VII Congreso Internacional de Psicología del Tucumán · Universidad Nacional de Tucumán.",
+      "url": "https://www.psicologia.unt.edu.ar/gestor/wp-content/uploads/2023/06/Libro-de-Actas-VII-Congreso-.pdf"
     },
     {
-      year: "2016",
-      category: "congresos",
-      type: "Comunicación en congreso",
-      status: "Presentación académica",
-      title: "Nuevas articulaciones entre la asexualidad y el concepto de sublimación freudiano",
-      detail: "VII Congreso Internacional de Investigación y Práctica Profesional en Psicología · Universidad de Buenos Aires.",
-      url: ""
+      "year": "2021",
+      "category": "congresos",
+      "type": "Ponencia",
+      "status": "Expositor acreditado",
+      "title": "Discursos, mandatos sociales y conductas de discriminación hacia la transexualidad. Una investigación empírica cualitativa",
+      "detail": "VII Congreso Internacional de Psicología del Tucumán · Universidad Nacional de Tucumán. Coautoría acreditada en las actas.",
+      "url": "https://www.psicologia.unt.edu.ar/gestor/wp-content/uploads/2023/06/Libro-de-Actas-VII-Congreso-.pdf"
     },
     {
-      year: "2020",
-      category: "formacion",
-      type: "Docencia de extensión",
-      status: "Actividad de formación",
-      title: "Psicoanálisis y género",
-      detail: "Actividad de formación · Instituto Fernando Ulloa.",
-      url: ""
+      "year": "2018",
+      "category": "congresos",
+      "type": "Ponencia",
+      "status": "Expositor acreditado",
+      "title": "Estudio exploratorio sobre prácticas sexuales de riesgo",
+      "detail": "X Congreso Internacional de Investigación y Práctica Profesional en Psicología · Universidad de Buenos Aires.",
+      "url": ""
     },
     {
-      year: "2018",
-      category: "formacion",
-      type: "Taller",
-      status: "Actividad de formación",
-      title: "Infancias y adolescencias trans: herramientas para el área de educación",
-      detail: "St George’s College.",
-      url: ""
+      "year": "2018",
+      "category": "congresos",
+      "type": "Participación como expositor",
+      "status": "Expositor acreditado · título no consignado",
+      "title": "VIII Congreso Marplatense de Psicología",
+      "detail": "Facultad de Psicología · Universidad Nacional de Mar del Plata. El certificado acredita el rol de expositor, pero no identifica el título de la presentación.",
+      "url": ""
+    },
+    {
+      "year": "2017",
+      "category": "congresos",
+      "type": "Ponencia",
+      "status": "Expositor acreditado",
+      "title": "Conexión y relación. Articulaciones a la luz de los dispositivos electrónicos",
+      "detail": "IX Congreso Internacional de Investigación y Práctica Profesional en Psicología · Universidad de Buenos Aires.",
+      "url": ""
+    },
+    {
+      "year": "2016",
+      "category": "congresos",
+      "type": "Ponencia",
+      "status": "Expositor acreditado",
+      "title": "Nuevas articulaciones entre asexualidad y el concepto de sublimación freudiano",
+      "detail": "VIII Congreso Internacional de Investigación y Práctica Profesional en Psicología · Universidad de Buenos Aires.",
+      "url": ""
+    },
+    {
+      "year": "2020",
+      "category": "formacion",
+      "type": "Docencia de extensión",
+      "status": "Actividad de formación",
+      "title": "Psicoanálisis y género",
+      "detail": "Instituto Fernando Ulloa.",
+      "url": ""
+    },
+    {
+      "year": "2018",
+      "category": "formacion",
+      "type": "Taller",
+      "status": "Actividad de formación",
+      "title": "Infancias y adolescencias trans: herramientas para el área de educación",
+      "detail": "St George’s College.",
+      "url": ""
     }
   ],
-  experience: [
+  "experience": [
     {
-      period: "2023 — ACTUALIDAD",
-      role: "Docente universitario e investigador",
-      org: "Universidad Argentina de la Empresa · UADE",
-      detail: "Docencia en Psicoanálisis I, Psicoanálisis II e Introducción a la Psicología. Participación y dirección de proyectos de investigación y diseño de dispositivos de enseñanza."
+      "period": "2023 — ACTUALIDAD",
+      "role": "Docente universitario e investigador",
+      "org": "Universidad Argentina de la Empresa · UADE",
+      "detail": "Docencia en Psicoanálisis I, Psicoanálisis II e Introducción a la Psicología. Dirección (2023–2025) del proyecto «Psicoterapia compatible para el tratamiento de personas pertenecientes a minorías sexuales o de género desde la perspectiva de pacientes y terapeutas»; investigación sobre apuestas online y adolescencias (2025–2026). Diseño de materiales y evaluaciones."
     },
     {
-      period: "2017 — ACTUALIDAD",
-      role: "Psicólogo clínico",
-      org: "Consultorio particular · CABA",
-      detail: "Atención clínica con orientación psicoanalítica a niños, adolescentes y adultos. Matrícula Nacional 67.794."
+      "period": "2017 — ACTUALIDAD",
+      "role": "Psicólogo clínico",
+      "org": "Consultorio particular · CABA",
+      "detail": "Atención clínica con orientación psicoanalítica a niños, adolescentes y adultos. Matrícula Nacional 67.794."
     },
     {
-      period: "2017 — ACTUALIDAD",
-      role: "Jefe de Trabajos Prácticos, docente e investigador",
-      org: "Universidad de la Marina Mercante · UdeMM",
-      detail: "Desde la graduación en UdeMM: JTP de Fundamentos de Psicoanálisis I y II. Ex docente de la cátedra de Lenguaje y Comunicación. Antecedentes de coordinación del área de Graduados y participación en investigación."
+      "period": "2017 — ACTUALIDAD",
+      "role": "Jefe de Trabajos Prácticos, docente e investigador",
+      "org": "Universidad de la Marina Mercante · UdeMM",
+      "detail": "Desde la graduación en UdeMM: JTP de Fundamentos de Psicoanálisis I y II. Ex docente de la cátedra de Lenguaje y Comunicación. Antecedentes de coordinación del área de Graduados y participación en investigación. Tutor y director de Trabajos Integradores Finales de la Licenciatura en Psicología (selección documentada: 2020, 2021 y 2022)."
     },
     {
-      period: "2026",
-      role: "Docente · Diversidad e Inclusión",
-      org: "UADE Executive Education / Business School",
-      detail: "Formación profesional en diversidad, inclusión y prácticas institucionales."
+      "period": "2026",
+      "role": "Docente · Diversidad e Inclusión",
+      "org": "UADE Executive Education / Business School",
+      "detail": "Formación profesional en diversidad, inclusión y prácticas institucionales."
     },
     {
-      period: "2026",
-      role: "Coordinador de grupos terapéuticos",
-      org: "Comunidad Bienestar",
-      detail: "Coordinación de grupos interdisciplinarios y actividades psicoeducativas."
+      "period": "2026",
+      "role": "Coordinador de grupos terapéuticos",
+      "org": "Comunidad Bienestar",
+      "detail": "Coordinación de grupos interdisciplinarios y actividades psicoeducativas."
     },
     {
-      period: "2017 — 2022",
-      role: "Docente y psicólogo admisor",
-      org: "Instituto Fernando Ulloa",
-      detail: "Admisión clínica, prácticas supervisadas y actualización profesional."
+      "period": "2017 — 2022",
+      "role": "Docente y psicólogo admisor",
+      "org": "Instituto Fernando Ulloa",
+      "detail": "Admisión clínica, prácticas supervisadas y actualización profesional."
     }
   ]
 };
@@ -396,8 +470,8 @@ window.SITIO = {
 (()=>{
   'use strict';
   const original = window.SITIO;
-  const translations = {"en":{"updated":"October 2026","name":"Guillermo Omar Ferreyra","contact":{"email":"guilleoff@gmail.com"},"research":[{"number":"01","period":"2025 — 2026","place":"UADE · Project A23S17","title":"Online gambling, video games and adolescence","description":"Qualitative research into online gambling, digital purchases and platform dynamics, involving families, teachers and professionals. Includes guidance materials and preventive educational activities.","themes":["Adolescence","Digital platforms","Prevention"],"state":"Research project"},{"number":"02","period":"IN PROGRESS","place":"UNTREF · Master’s in Gender Studies and Policy","title":"Grindr and the construction of a desirable self","description":"Thesis project examining desire, self-presentation and contemporary processes of subject formation among gay men in Buenos Aires, drawing on psychoanalysis, Foucault, Butler and gender studies.","themes":["Subjectivity","Sexuality","Dating apps"],"state":"Master’s thesis project"},{"number":"03","period":"2020 — 2021","place":"UdeMM · Research","title":"Psychotherapy and sexual and gender diversity","description":"Research into patients’ and therapists’ perspectives on whether psychotherapeutic interventions respond appropriately to the experiences of sexual and gender minorities.","themes":["Clinical practice","Diversity","Psychotherapy"],"state":"Research project"},{"number":"04","period":"2018 — 2020","place":"UdeMM · Research","title":"Reasons for seeking psychoanalytic treatment","description":"Study of the reasons adult patients sought treatment at a psychoanalytically oriented psychotherapy institution in Buenos Aires.","themes":["Psychoanalysis","Clinical practice"],"state":"Research project"}],"works":[{"year":"2026","category":"documentos","type":"Guidance document","status":"Prepared document · No public link","title":"Video games, digital purchases and online gambling","detail":"Guidance for families, teachers and professionals developed within UADE project A23S17.","url":""},{"year":"2026","category":"documentos","type":"Academic paper","status":"Accepted for presentation · Publication pending verification","title":"The pedagogy of limits after the business model: online gambling, adolescence and symbolic cleansing devices","detail":"Research and reflection on adult and institutional responsibilities in relation to digital gambling systems.","url":""},{"year":"2018","category":"congresos","type":"Conference presentation","status":"Academic presentation","title":"Reasons for seeking treatment at a psychoanalytically oriented psychotherapy institution","detail":"8th Mar del Plata International Psychology Congress · Universidad Nacional de Mar del Plata.","url":""},{"year":"2017","category":"congresos","type":"Conference presentation","status":"Academic presentation","title":"Connection and relationships: reflections in light of electronic devices","detail":"8th International Congress on Research and Professional Practice in Psychology · Universidad de Buenos Aires.","url":""},{"year":"2016","category":"congresos","type":"Conference presentation","status":"Academic presentation","title":"New connections between asexuality and the Freudian concept of sublimation","detail":"7th International Congress on Research and Professional Practice in Psychology · Universidad de Buenos Aires.","url":""},{"year":"2020","category":"formacion","type":"Continuing education","status":"Training activity","title":"Psychoanalysis and gender","detail":"Educational activity · Instituto Fernando Ulloa.","url":""},{"year":"2018","category":"formacion","type":"Workshop","status":"Training activity","title":"Trans children and adolescents: tools for education professionals","detail":"St George’s College.","url":""}],"experience":[{"period":"2023 — PRESENT","role":"University lecturer and researcher","org":"Universidad Argentina de la Empresa · UADE","detail":"Teaching Psychoanalysis I, Psychoanalysis II and Introduction to Psychology. Participation in and leadership of research projects and development of teaching resources."},{"period":"2017 — PRESENT","role":"Clinical psychologist","org":"Private practice · Buenos Aires","detail":"Psychoanalytically oriented clinical care for children, adolescents and adults. Argentine National License No. 67,794."},{"period":"2017 — PRESENT","role":"Teaching assistant, lecturer and researcher","org":"Universidad de la Marina Mercante · UdeMM","detail":"Since graduating from UdeMM, teaching assistant in Foundations of Psychoanalysis I and II. Former lecturer in Language and Communication. Previous coordination of the Alumni Office and participation in research."},{"period":"2026","role":"Lecturer · Diversity and Inclusion","org":"UADE Executive Education / Business School","detail":"Professional training in diversity, inclusion and institutional practices."},{"period":"2026","role":"Therapeutic group coordinator","org":"Comunidad Bienestar","detail":"Coordination of interdisciplinary groups and psychoeducational activities."},{"period":"2017 — 2022","role":"Clinical supervisor/educator and intake psychologist","org":"Instituto Fernando Ulloa","detail":"Clinical intake, supervised training placements and professional continuing education."}]},"ja":{"updated":"2026年10月","name":"Guillermo Omar Ferreyra","contact":{"email":"guilleoff@gmail.com"},"research":[{"number":"01","period":"2025 — 2026","place":"UADE · 研究プロジェクト A23S17","title":"オンライン賭博、ビデオゲームと思春期・青年期","description":"オンライン賭博、デジタル課金、プラットフォームの仕組みを対象とする質的研究。家庭、教員、専門職への調査をもとに、ガイダンス資料や予防教育活動を展開しています。","themes":["思春期・青年期","デジタルプラットフォーム","予防"],"state":"研究プロジェクト"},{"number":"02","period":"進行中","place":"UNTREF · ジェンダー研究・政策修士課程","title":"Grindrと「望ましい自己」の構築","description":"ブエノスアイレスのゲイ男性における欲望、自己呈示、現代的な主体形成を研究する修士論文計画。精神分析、フーコー、バトラー、ジェンダー研究の議論を参照します。","themes":["主体性","セクシュアリティ","マッチングアプリ"],"state":"修士論文計画"},{"number":"03","period":"2020 — 2021","place":"UdeMM · 研究","title":"心理療法と性・ジェンダーの多様性","description":"性的少数者・ジェンダー少数者の経験に即した心理療法のあり方について、患者と治療者の双方の視点から検討した研究。","themes":["臨床","多様性","心理療法"],"state":"研究プロジェクト"},{"number":"04","period":"2018 — 2020","place":"UdeMM · 研究","title":"精神分析的心理療法における受診動機","description":"ブエノスアイレスの精神分析的心理療法機関を受診した成人の相談・受診動機に関する研究。","themes":["精神分析","臨床実践"],"state":"研究プロジェクト"}],"works":[{"year":"2026","category":"documentos","type":"ガイダンス資料","status":"資料作成済み・公開リンクなし","title":"ビデオゲーム、デジタル課金とオンライン賭博","detail":"UADEの研究プロジェクトA23S17で作成した、家庭・教員・専門職向けガイダンス資料。","url":""},{"year":"2026","category":"documentos","type":"研究論考","status":"発表採択済み・刊行状況は要確認","title":"ビジネスモデルの後の「限界」の教育：オンライン賭博、思春期・青年期、象徴的浄化の装置","detail":"デジタル賭博システムに対する大人と教育・社会機関の責任を論じた研究・考察。","url":""},{"year":"2018","category":"congresos","type":"学会発表","status":"学術発表","title":"精神分析的心理療法機関における受診動機","detail":"第8回マル・デル・プラタ国際心理学会議 · マル・デル・プラタ国立大学。","url":""},{"year":"2017","category":"congresos","type":"学会発表","status":"学術発表","title":"つながりと関係：電子機器を手がかりとした考察","detail":"第8回心理学研究・専門実践国際会議 · ブエノスアイレス大学。","url":""},{"year":"2016","category":"congresos","type":"学会発表","status":"学術発表","title":"無性愛とフロイトの昇華概念の新たな接点","detail":"第7回心理学研究・専門実践国際会議 · ブエノスアイレス大学。","url":""},{"year":"2020","category":"formacion","type":"公開講座","status":"研修活動","title":"精神分析とジェンダー","detail":"教育活動 · フェルナンド・ウジョア研究所。","url":""},{"year":"2018","category":"formacion","type":"ワークショップ","status":"研修活動","title":"トランスジェンダーの子どもと若者：教育現場のためのツール","detail":"セント・ジョージズ・カレッジ。","url":""}],"experience":[{"period":"2023年 — 現在","role":"大学教員・研究者","org":"アルゼンチン企業大学（UADE）","detail":"「精神分析 I・II」「心理学入門」を担当。研究プロジェクトへの参加・主導、教材開発に従事。"},{"period":"2017年 — 現在","role":"臨床心理を専門とする心理士","org":"個人開業 · ブエノスアイレス","detail":"子ども、思春期・青年、成人に対する精神分析的アプローチに基づく臨床実践。アルゼンチン国家資格登録番号67,794。"},{"period":"2017年 — 現在","role":"演習担当教員・大学教員・研究者","org":"マリーナ・メルカンテ大学（UdeMM）","detail":"同大学卒業後、「精神分析の基礎 I・II」で演習を担当。「言語とコミュニケーション」の元担当教員。卒業生部門の運営経験および研究活動歴があります。"},{"period":"2026年","role":"講師・多様性とインクルージョン","org":"UADEエグゼクティブ・エデュケーション","detail":"多様性、インクルージョン、組織内の実践に関する専門職研修。"},{"period":"2026年","role":"治療グループ・コーディネーター","org":"Comunidad Bienestar","detail":"学際的グループの運営と心理教育活動。"},{"period":"2017年 — 2022年","role":"臨床教育担当・初回面接心理士","org":"フェルナンド・ウジョア研究所","detail":"初回面接、臨床実習指導、専門職向け継続教育。"}]}};
-  const staticTranslations = {"en":{"Saltar al contenido":"Skip to content","CLÍNICA · DOCENCIA · INVESTIGACIÓN":"CLINICAL PRACTICE · TEACHING · RESEARCH","MENÚ ☰":"MENU ☰","Perfil":"Profile","Investigación":"Research","Publicaciones":"Publications","Docencia":"Teaching","Trayectoria":"Career","Contacto ↗":"Contact ↗","Perfil académico & profesional · 2026":"Academic & professional profile · 2026","Psicólogo clínico  •  Docente universitario  •  Investigador":"Clinical psychologist · University lecturer · Researcher","Trabajo en la intersección entre":"I work at the intersection of","psicoanálisis, género, educación y tecnologías digitales.":"psychoanalysis, gender, education and digital technologies.","La clínica, la docencia y la investigación como distintas maneras de formular preguntas sobre nuestro tiempo.":"Clinical practice, teaching and research offer different ways to investigate the questions of our time.","EMAIL":"EMAIL","CV EN PDF":"CV (PDF)","BUENOS AIRES / ARGENTINA":"BUENOS AIRES / ARGENTINA","DESPLAZÁ PARA EXPLORAR ↓":"SCROLL TO EXPLORE ↓","Clínica":"Clinical","psicoanalítica":"practice","cualitativa":"Qualitative","Formación":"University","universitaria":"education","01 / Perfil":"01 / Profile","La vida institucional, los vínculos sociales y las tecnologías":"Institutional life, social relationships and technologies","como territorios de lectura clínica y de investigación.":"as fields for clinical inquiry and research.","Soy licenciado en Psicología por la":"I hold a degree in Psychology from the","Universidad de la Marina Mercante":"Universidad de la Marina Mercante","y maestrando en Estudios y Políticas de Género en la":"and am pursuing a master’s degree in Gender Studies and Policy at the","Universidad Nacional de Tres de Febrero":"Universidad Nacional de Tres de Febrero",".":".","Desde 2017 desarrollo práctica clínica y actividad docente universitaria. Investigo problemas vinculados con el psicoanálisis, el género, las adolescencias y las transformaciones de los vínculos mediadas por plataformas digitales.":"Since 2017, I have maintained a clinical practice and taught at university level. My research addresses psychoanalysis, gender, adolescence and how digital platforms reshape interpersonal relationships.","Mi trabajo se articula entre la clínica particular, la docencia en UADE y UdeMM y la producción académica de orientación cualitativa.":"My work combines private clinical practice, teaching at UADE and UdeMM, and qualitative academic research.","PSICOANÁLISIS":"PSYCHOANALYSIS","GÉNERO":"GENDER","CLÍNICA":"CLINICAL PRACTICE","SUBJETIVIDAD DIGITAL":"DIGITAL SUBJECTIVITY","DOCENCIA":"TEACHING","02 / Investigación":"02 / Research","Investigación.":"Research.","Una selección de proyectos institucionales y líneas de trabajo, con sus períodos y estados claramente identificados.":"Selected institutional projects and research interests, with dates and project status clearly identified.","03 / Archivo académico":"03 / Academic archive","Producción académica.":"Academic work.","Todos":"All","Artículos":"Articles","Documentos":"Documents","Congresos":"Conferences","Extensión":"Outreach","Se distinguen las comunicaciones a congresos de los artículos de revista. Los enlaces a textos completos se incorporan solo cuando el material está publicado o autorizado para difusión.":"Conference presentations are distinguished from peer-reviewed journal articles. Full-text links are added only when material has been published or approved for public distribution.","04 / Docencia":"04 / Teaching","Materias dictadas.":"Courses taught.","Materias de grado, formación profesional y extensión universitaria.":"Undergraduate courses, professional training and university outreach.","UADE / CÁTEDRA":"UADE / COURSE","Psicoanálisis I":"Psychoanalysis I","Psicoanálisis II":"Psychoanalysis II","Conceptos fundamentales y su lectura clínica.":"Foundational concepts and their clinical interpretation.","Desarrollos postfreudianos y problemas de la práctica.":"Post-Freudian developments and questions arising in clinical practice.","Introducción a la Psicología":"Introduction to Psychology","Perspectivas, teorías y campos de intervención.":"Approaches, theories and areas of professional practice.","UDEMM / JTP · DESDE 2017":"UDEMM / TEACHING ASSISTANT · SINCE 2017","Fundamentos de Psicoanálisis I":"Foundations of Psychoanalysis I","Fundamentos de Psicoanálisis II":"Foundations of Psychoanalysis II","Docencia y acompañamiento académico en formación de grado.":"Teaching and academic support in undergraduate education.","Continuidad docente en el área de psicoanálisis.":"Ongoing teaching in psychoanalysis.","UDEMM / ANTECEDENTE":"UDEMM / PREVIOUS APPOINTMENT","Lenguaje y Comunicación":"Language and Communication","Ex docente de la cátedra.":"Former course lecturer.","05 / Trayectoria profesional":"05 / Professional career","Experiencia profesional.":"Professional experience.","Experiencia clínica, docencia, investigación y coordinación de dispositivos grupales.":"Clinical practice, university teaching, research and coordination of group-based programs.","FORMACIÓN / POSGRADO":"EDUCATION / POSTGRADUATE","Maestría en Estudios y Políticas de Género":"Master’s in Gender Studies and Policy","Universidad Nacional de Tres de Febrero · En curso.":"Universidad Nacional de Tres de Febrero · In progress.","FORMACIÓN / GRADO":"EDUCATION / UNDERGRADUATE","Licenciatura en Psicología":"Degree in Psychology","Universidad de la Marina Mercante · 2012–2017. Promedio general: 8,0.":"Universidad de la Marina Mercante · 2012–2017. Cumulative grade average: 8.0/10.","06 / En desarrollo":"06 / Current projects","Proyectos actuales.":"Current projects.","Un registro de proyectos actuales. No reemplaza el CV ni el archivo de producción formal.":"An overview of ongoing projects; it does not replace the CV or the formal academic record.","INVESTIGACIÓN / 2026":"RESEARCH / 2026","Adolescencias, videojuegos y apuestas":"Adolescents, video games and online gambling","Investigación y elaboración de materiales de orientación para familias e instituciones educativas.":"Research and development of guidance materials for families and educational institutions.","TESIS / EN DESARROLLO":"THESIS / IN PROGRESS","Grindr y subjetividad":"Grindr and subjectivity","Proyecto de tesis sobre la construcción de un yo deseable y las prácticas de presentación de sí.":"Thesis project on the construction of a desirable self and practices of self-presentation.","07 / Contacto":"07 / Contact","Continuemos la":"Let’s continue the","conversación.":"conversation.","Para consultas académicas, colaboración en investigaciones, actividades de formación y proyectos institucionales.":"For academic inquiries, research collaborations, training activities and institutional projects.","GUILLERMO OMAR FERREYRA · BUENOS AIRES":"GUILLERMO OMAR FERREYRA · BUENOS AIRES","ACTUALIZACIÓN:":"UPDATED:","OCTUBRE 2026":"OCTOBER 2026","VOLVER ARRIBA ↑":"BACK TO TOP ↑"},"ja":{"Saltar al contenido":"本文へスキップ","CLÍNICA · DOCENCIA · INVESTIGACIÓN":"臨床・教育・研究","MENÚ ☰":"メニュー ☰","Perfil":"プロフィール","Investigación":"研究","Publicaciones":"業績","Docencia":"教育","Trayectoria":"経歴","Contacto ↗":"お問い合わせ ↗","Perfil académico & profesional · 2026":"学術・専門職プロフィール · 2026","Psicólogo clínico  •  Docente universitario  •  Investigador":"臨床心理を専門とする心理士・大学教員・研究者","Trabajo en la intersección entre":"私の活動領域は","psicoanálisis, género, educación y tecnologías digitales.":"精神分析、ジェンダー、教育、デジタル技術の交差点にあります。","La clínica, la docencia y la investigación como distintas maneras de formular preguntas sobre nuestro tiempo.":"臨床、教育、研究という異なる実践を通じて、現代社会への問いを探究しています。","EMAIL":"メール","CV EN PDF":"履歴書・業績書 PDF","BUENOS AIRES / ARGENTINA":"アルゼンチン／ブエノスアイレス","DESPLAZÁ PARA EXPLORAR ↓":"下にスクロール ↓","Clínica":"臨床","psicoanalítica":"精神分析","cualitativa":"質的研究","Formación":"大学","universitaria":"教育","01 / Perfil":"01 / プロフィール","La vida institucional, los vínculos sociales y las tecnologías":"制度・社会的つながり・テクノロジーを","como territorios de lectura clínica y de investigación.":"臨床と研究の視点から読み解く。","Soy licenciado en Psicología por la":"私は","Universidad de la Marina Mercante":"マリーナ・メルカンテ大学","y maestrando en Estudios y Políticas de Género en la":"で心理学の学士号を取得し、現在は","Universidad Nacional de Tres de Febrero":"トレス・デ・フェブレロ国立大学",".":"でジェンダー研究・政策の修士課程に在籍しています。","Desde 2017 desarrollo práctica clínica y actividad docente universitaria. Investigo problemas vinculados con el psicoanálisis, el género, las adolescencias y las transformaciones de los vínculos mediadas por plataformas digitales.":"2017年より臨床実践と大学教育に従事しています。研究では、精神分析、ジェンダー、思春期・青年期、そしてデジタルプラットフォームが人間関係にもたらす変化を扱っています。","Mi trabajo se articula entre la clínica particular, la docencia en UADE y UdeMM y la producción académica de orientación cualitativa.":"個人臨床、UADEおよびUdeMMでの大学教育、質的研究を軸に活動しています。","PSICOANÁLISIS":"精神分析","GÉNERO":"ジェンダー","CLÍNICA":"臨床","SUBJETIVIDAD DIGITAL":"デジタル時代の主体性","DOCENCIA":"教育","02 / Investigación":"02 / 研究","Investigación.":"研究","Una selección de proyectos institucionales y líneas de trabajo, con sus períodos y estados claramente identificados.":"所属機関での研究プロジェクトと研究テーマを、実施期間および進捗状況とともに紹介します。","03 / Archivo académico":"03 / 研究・業績アーカイブ","Producción académica.":"研究・学術業績","Todos":"すべて","Artículos":"論文","Documentos":"資料","Congresos":"学会発表","Extensión":"公開講座・社会連携","Se distinguen las comunicaciones a congresos de los artículos de revista. Los enlaces a textos completos se incorporan solo cuando el material está publicado o autorizado para difusión.":"学会発表と学術誌掲載論文は区別して表示しています。全文へのリンクは、公開済みまたは公開許可を得た資料に限って掲載します。","04 / Docencia":"04 / 担当科目","Materias dictadas.":"担当科目","Materias de grado, formación profesional y extensión universitaria.":"学部科目、専門職研修、大学の公開教育活動。","UADE / CÁTEDRA":"UADE／担当科目","Psicoanálisis I":"精神分析 I","Psicoanálisis II":"精神分析 II","Conceptos fundamentales y su lectura clínica.":"基本概念と臨床的な読解。","Desarrollos postfreudianos y problemas de la práctica.":"フロイト以後の理論的展開と臨床実践上の課題。","Introducción a la Psicología":"心理学入門","Perspectivas, teorías y campos de intervención.":"理論的視点、学説、心理学の実践領域。","UDEMM / JTP · DESDE 2017":"UdeMM／演習担当教員・2017年より","Fundamentos de Psicoanálisis I":"精神分析の基礎 I","Fundamentos de Psicoanálisis II":"精神分析の基礎 II","Docencia y acompañamiento académico en formación de grado.":"学部教育での授業と学修支援。","Continuidad docente en el área de psicoanálisis.":"精神分析領域における継続的な教育活動。","UDEMM / ANTECEDENTE":"UdeMM／過去の担当科目","Lenguaje y Comunicación":"言語とコミュニケーション","Ex docente de la cátedra.":"以前に担当した科目。","05 / Trayectoria profesional":"05 / 職歴","Experiencia profesional.":"職務経験","Experiencia clínica, docencia, investigación y coordinación de dispositivos grupales.":"臨床実践、大学教育、研究、グループ支援プログラムの運営経験。","FORMACIÓN / POSGRADO":"学歴／大学院","Maestría en Estudios y Políticas de Género":"ジェンダー研究・政策修士課程","Universidad Nacional de Tres de Febrero · En curso.":"トレス・デ・フェブレロ国立大学・在学中。","FORMACIÓN / GRADO":"学歴／学士","Licenciatura en Psicología":"心理学学士","Universidad de la Marina Mercante · 2012–2017. Promedio general: 8,0.":"マリーナ・メルカンテ大学・2012〜2017年。総合成績平均8.0／10。","06 / En desarrollo":"06 / 進行中のプロジェクト","Proyectos actuales.":"現在のプロジェクト","Un registro de proyectos actuales. No reemplaza el CV ni el archivo de producción formal.":"進行中のプロジェクトの概要です。正式な履歴書・業績一覧に代わるものではありません。","INVESTIGACIÓN / 2026":"研究／2026年","Adolescencias, videojuegos y apuestas":"思春期・青年期、ゲーム、オンライン賭博","Investigación y elaboración de materiales de orientación para familias e instituciones educativas.":"家庭や教育機関向けの支援資料の研究・作成。","TESIS / EN DESARROLLO":"修士論文／執筆準備中","Grindr y subjetividad":"Grindrと主体性","Proyecto de tesis sobre la construcción de un yo deseable y las prácticas de presentación de sí.":"望ましい自己像の構築と自己呈示の実践をめぐる修士論文計画。","07 / Contacto":"07 / お問い合わせ","Continuemos la":"ご連絡","conversación.":"ください。","Para consultas académicas, colaboración en investigaciones, actividades de formación y proyectos institucionales.":"学術的なお問い合わせ、共同研究、研修活動、機関間プロジェクトに関するご連絡をお待ちしています。","GUILLERMO OMAR FERREYRA · BUENOS AIRES":"ギジェルモ・オマール・フェレイラ · ブエノスアイレス","ACTUALIZACIÓN:":"最終更新：","OCTUBRE 2026":"2026年10月","VOLVER ARRIBA ↑":"ページ上部へ ↑"}};
+  const translations = {"en":{"updated":"October 2026","name":"Guillermo Omar Ferreyra","contact":{"email":"guilleoff@gmail.com"},"research":[{"number":"01","period":"2025 — 2026","place":"UADE · Project A23S17","title":"Online gambling, video games and adolescence","description":"Qualitative research into online gambling, digital purchases and platform dynamics, involving families, teachers and professionals. Includes guidance materials and preventive educational activities.","themes":["Adolescence","Digital platforms","Prevention"],"state":"Research project"},{"number":"02","period":"2023 — 2025","place":"UADE · Research director","title":"Psychotherapy appropriate for sexual and gender minorities","description":"Directed the research project “Psychotherapy appropriate for treating people belonging to sexual or gender minorities from patients’ and therapists’ perspectives”. Qualitative research on clinical perspectives and experiences of care.","themes":["Psychotherapy","Sexual and gender diversity","Qualitative research"],"state":"Directed research project · completed"},{"number":"03","period":"IN PROGRESS","place":"UNTREF · Master’s in Gender Studies and Policy","title":"Grindr and the construction of a desirable self","description":"Thesis project examining desire, self-presentation and contemporary processes of subject formation among gay men in Buenos Aires, drawing on psychoanalysis, Foucault, Butler and gender studies.","themes":["Subjectivity","Sexuality","Dating apps"],"state":"Master’s thesis project"},{"number":"04","period":"2020 — 2021","place":"UdeMM · Research","title":"Psychotherapy and sexual and gender diversity","description":"Research into patients’ and therapists’ perspectives on whether psychotherapeutic interventions respond appropriately to the experiences of sexual and gender minorities.","themes":["Clinical practice","Diversity","Psychotherapy"],"state":"Research project"},{"number":"05","period":"2018 — 2020","place":"UdeMM · Research","title":"Reasons for seeking psychoanalytic treatment","description":"Study of the reasons adult patients sought treatment at a psychoanalytically oriented psychotherapy institution in Buenos Aires.","themes":["Psychoanalysis","Clinical practice"],"state":"Research project"}],"works":[{"year":"2026","category":"documentos","type":"Guidance document","status":"Draft prepared · no public link","title":"Video games, digital purchases and online gambling","detail":"Guidance material for families and schools based on UADE research project A23S17. Final publication to be confirmed.","url":""},{"year":"2026","category":"documentos","type":"Academic paper","status":"Accepted for presentation · publication unverified","title":"The pedagogy of limits after the business: online gambling and adolescence","detail":"Research and reflection on adult and institutional responsibility in online gambling platforms.","url":""},{"year":"2023","category":"libros","type":"Book chapter","status":"Published · RIL Editores · ISBN 978-956-01-1480-8","title":"Prejudice toward sexual diversity among mental health professionals","detail":"Coauthored by Julieta Olivera and Guillermo Ferreyra. In: Psychotherapy and Mental Health among Sexually and Gender Diverse (LGBT+) People: Research and Practice in Ibero-America. Edited by C. Martínez, A. Tomicic, A. Brandelli Costa and M. Rueda. Original chapter in Spanish.","url":"https://rileditores.com/producto/psicoterapia-y-salud-mental-en-personas-de-la-diversidad-sexual-y-de-genero-lgbt-investigacion-y-practica-en-iberoamerica/"},{"year":"2021","category":"congresos","type":"Conference presentation","status":"Certified presenter","title":"Toward a broader psychoanalysis: Gender perspective and human rights","detail":"7th International Psychology Congress of Tucumán · National University of Tucumán. Original presentation in Spanish.","url":"https://www.psicologia.unt.edu.ar/gestor/wp-content/uploads/2023/06/Libro-de-Actas-VII-Congreso-.pdf"},{"year":"2021","category":"congresos","type":"Conference presentation","status":"Certified presenter","title":"Discourses, social mandates and discrimination against transgender people: A qualitative empirical study","detail":"7th International Psychology Congress of Tucumán · National University of Tucumán. Coauthorship documented in the proceedings. Original in Spanish.","url":"https://www.psicologia.unt.edu.ar/gestor/wp-content/uploads/2023/06/Libro-de-Actas-VII-Congreso-.pdf"},{"year":"2018","category":"congresos","type":"Conference presentation","status":"Certified presenter","title":"Exploratory study of risky sexual practices","detail":"10th International Congress of Research and Professional Practice in Psychology · University of Buenos Aires.","url":""},{"year":"2018","category":"congresos","type":"Conference presenter","status":"Certified presenter · paper title not stated","title":"8th Mar del Plata Psychology Congress","detail":"School of Psychology · National University of Mar del Plata. The certificate confirms a presenter role but does not state a paper title.","url":""},{"year":"2017","category":"congresos","type":"Conference presentation","status":"Certified presenter","title":"Connection and relationship: Reflections on electronic devices","detail":"9th International Congress of Research and Professional Practice in Psychology · University of Buenos Aires.","url":""},{"year":"2016","category":"congresos","type":"Conference presentation","status":"Certified presenter","title":"New links between asexuality and the Freudian concept of sublimation","detail":"8th International Congress of Research and Professional Practice in Psychology · University of Buenos Aires.","url":""},{"year":"2020","category":"formacion","type":"Continuing education","status":"Teaching activity","title":"Psychoanalysis and gender","detail":"Fernando Ulloa Institute.","url":""},{"year":"2018","category":"formacion","type":"Workshop","status":"Teaching activity","title":"Trans children and adolescents: tools for educators","detail":"St George’s College.","url":""}],"experience":[{"period":"2023 — PRESENT","role":"University lecturer and researcher","org":"Universidad Argentina de la Empresa · UADE","detail":"Teaching Psychoanalysis I, Psychoanalysis II and Introduction to Psychology. Directed a UADE research project on appropriate psychotherapy for sexual and gender minorities (2023–2025); research on online gambling and adolescence (2025–2026). Developed teaching materials and assessments."},{"period":"2017 — PRESENT","role":"Clinical psychologist","org":"Private practice · Buenos Aires","detail":"Psychoanalytically oriented clinical care for children, adolescents and adults. Argentine National License No. 67,794."},{"period":"2017 — PRESENT","role":"Teaching assistant, lecturer and researcher","org":"Universidad de la Marina Mercante · UdeMM","detail":"Since graduating from UdeMM, teaching assistant in Foundations of Psychoanalysis I and II. Former lecturer in Language and Communication. Previous coordination of the Alumni Office and participation in research. Supervisor of undergraduate capstone projects in Psychology (documented examples from 2020, 2021 and 2022)."},{"period":"2026","role":"Lecturer · Diversity and Inclusion","org":"UADE Executive Education / Business School","detail":"Professional training in diversity, inclusion and institutional practices."},{"period":"2026","role":"Therapeutic group coordinator","org":"Comunidad Bienestar","detail":"Coordination of interdisciplinary groups and psychoeducational activities."},{"period":"2017 — 2022","role":"Clinical supervisor/educator and intake psychologist","org":"Instituto Fernando Ulloa","detail":"Clinical intake, supervised training placements and professional continuing education."}]},"ja":{"updated":"2026年10月","name":"Guillermo Omar Ferreyra","contact":{"email":"guilleoff@gmail.com"},"research":[{"number":"01","period":"2025 — 2026","place":"UADE · 研究プロジェクト A23S17","title":"オンライン賭博、ビデオゲームと思春期・青年期","description":"オンライン賭博、デジタル課金、プラットフォームの仕組みを対象とする質的研究。家庭、教員、専門職への調査をもとに、ガイダンス資料や予防教育活動を展開しています。","themes":["思春期・青年期","デジタルプラットフォーム","予防"],"state":"研究プロジェクト"},{"number":"02","period":"2023 — 2025","place":"UADE・研究代表者","title":"性的・ジェンダー・マイノリティに適した心理療法","description":"「性的またはジェンダー・マイノリティに属する人々の治療に適した心理療法：患者と治療者の視点から」を研究代表者として統括。臨床に関する見解と受療経験を質的に検討した。","themes":["心理療法","性的・ジェンダー多様性","質的研究"],"state":"研究代表として実施・終了"},{"number":"03","period":"進行中","place":"UNTREF · ジェンダー研究・政策修士課程","title":"Grindrと「望ましい自己」の構築","description":"ブエノスアイレスのゲイ男性における欲望、自己呈示、現代的な主体形成を研究する修士論文計画。精神分析、フーコー、バトラー、ジェンダー研究の議論を参照します。","themes":["主体性","セクシュアリティ","マッチングアプリ"],"state":"修士論文計画"},{"number":"04","period":"2020 — 2021","place":"UdeMM · 研究","title":"心理療法と性・ジェンダーの多様性","description":"性的少数者・ジェンダー少数者の経験に即した心理療法のあり方について、患者と治療者の双方の視点から検討した研究。","themes":["臨床","多様性","心理療法"],"state":"研究プロジェクト"},{"number":"05","period":"2018 — 2020","place":"UdeMM · 研究","title":"精神分析的心理療法における受診動機","description":"ブエノスアイレスの精神分析的心理療法機関を受診した成人の相談・受診動機に関する研究。","themes":["精神分析","臨床実践"],"state":"研究プロジェクト"}],"works":[{"year":"2026","category":"documentos","type":"ガイド資料","status":"作成済み・公開リンクなし","title":"ビデオゲーム、デジタル課金、オンライン賭博","detail":"UADE研究プロジェクトA23S17に基づく保護者・教育機関向け資料。正式な公開状況は確認中。","url":""},{"year":"2026","category":"documentos","type":"研究発表原稿","status":"発表採択済み・刊行状況未確認","title":"ビジネスの後に残る「限界」を教えること：オンライン賭博と青年期","detail":"オンライン賭博プラットフォームをめぐる大人と教育機関の責任を考察した研究。","url":""},{"year":"2023","category":"libros","type":"書籍所収論考","status":"刊行済み・RIL Editores・ISBN 978-956-01-1480-8","title":"メンタルヘルス専門職における性的多様性への偏見","detail":"Julieta OliveraとGuillermo Ferreyraの共著。『性的・ジェンダー多様性（LGBT+）の人々の心理療法とメンタルヘルス：イベロアメリカにおける研究と実践』収録。編者：C. Martínez、A. Tomicic、A. Brandelli Costa、M. Rueda。原文はスペイン語。","url":"https://rileditores.com/producto/psicoterapia-y-salud-mental-en-personas-de-la-diversidad-sexual-y-de-genero-lgbt-investigacion-y-practica-en-iberoamerica/"},{"year":"2021","category":"congresos","type":"学会発表","status":"発表者として認定","title":"より広い精神分析へ：ジェンダーの視点と人権","detail":"第7回トゥクマン国際心理学会議・トゥクマン国立大学。発表原語はスペイン語。","url":"https://www.psicologia.unt.edu.ar/gestor/wp-content/uploads/2023/06/Libro-de-Actas-VII-Congreso-.pdf"},{"year":"2021","category":"congresos","type":"学会発表","status":"発表者として認定","title":"トランスジェンダーの人々への差別に関する言説、社会的規範と行動：質的実証研究","detail":"第7回トゥクマン国際心理学会議・トゥクマン国立大学。共同執筆者は会議録に記載。発表原語はスペイン語。","url":"https://www.psicologia.unt.edu.ar/gestor/wp-content/uploads/2023/06/Libro-de-Actas-VII-Congreso-.pdf"},{"year":"2018","category":"congresos","type":"学会発表","status":"発表者として認定","title":"リスクを伴う性的実践についての探索的研究","detail":"第10回ブエノスアイレス大学心理学研究・実践国際会議。","url":""},{"year":"2018","category":"congresos","type":"学会発表者","status":"発表者として認定・発表題目は記載なし","title":"第8回マル・デル・プラタ心理学会議","detail":"マル・デル・プラタ国立大学心理学部。証明書は発表者としての参加を確認するが、発表題目は記載されていない。","url":""},{"year":"2017","category":"congresos","type":"学会発表","status":"発表者として認定","title":"つながりと関係：電子機器を手がかりとする考察","detail":"第9回ブエノスアイレス大学心理学研究・実践国際会議。","url":""},{"year":"2016","category":"congresos","type":"学会発表","status":"発表者として認定","title":"無性愛とフロイトの昇華概念との新たな接点","detail":"第8回ブエノスアイレス大学心理学研究・実践国際会議。","url":""},{"year":"2020","category":"formacion","type":"継続教育","status":"教育活動","title":"精神分析とジェンダー","detail":"フェルナンド・ウジョア研究所。","url":""},{"year":"2018","category":"formacion","type":"ワークショップ","status":"教育活動","title":"トランスジェンダーの子ども・思春期の若者を支える教育者向けの手法","detail":"セント・ジョージズ・カレッジ。","url":""}],"experience":[{"period":"2023年 — 現在","role":"大学教員・研究者","org":"アルゼンチン企業大学（UADE）","detail":"精神分析I・IIおよび心理学入門を担当。UADEで性的・ジェンダー・マイノリティに適した心理療法の研究を主導（2023〜2025年）。オンライン賭博と思春期・青年期の研究（2025〜2026年）にも従事し、教材・評価方法を開発。"},{"period":"2017年 — 現在","role":"臨床心理を専門とする心理士","org":"個人開業 · ブエノスアイレス","detail":"子ども、思春期・青年、成人に対する精神分析的アプローチに基づく臨床実践。アルゼンチン国家資格登録番号67,794。"},{"period":"2017年 — 現在","role":"演習担当教員・大学教員・研究者","org":"マリーナ・メルカンテ大学（UdeMM）","detail":"同大学卒業後、「精神分析の基礎 I・II」で演習を担当。「言語とコミュニケーション」の元担当教員。卒業生部門の運営経験および研究活動歴があります。 心理学学士課程の卒業研究（TIF）指導を担当（2020年・2021年・2022年の指導実績を掲載）。"},{"period":"2026年","role":"講師・多様性とインクルージョン","org":"UADEエグゼクティブ・エデュケーション","detail":"多様性、インクルージョン、組織内の実践に関する専門職研修。"},{"period":"2026年","role":"治療グループ・コーディネーター","org":"Comunidad Bienestar","detail":"学際的グループの運営と心理教育活動。"},{"period":"2017年 — 2022年","role":"臨床教育担当・初回面接心理士","org":"フェルナンド・ウジョア研究所","detail":"初回面接、臨床実習指導、専門職向け継続教育。"}]}};
+  const staticTranslations = {"en":{"Saltar al contenido":"Skip to content","CLÍNICA · DOCENCIA · INVESTIGACIÓN":"CLINICAL PRACTICE · TEACHING · RESEARCH","MENÚ ☰":"MENU ☰","Perfil":"Profile","Investigación":"Research","Publicaciones":"Publications","Docencia":"Teaching","Trayectoria":"Career","Contacto ↗":"Contact ↗","Perfil académico & profesional · 2026":"Academic & professional profile · 2026","Psicólogo clínico  •  Docente universitario  •  Investigador":"Clinical psychologist · University lecturer · Researcher","Trabajo en la intersección entre":"I work at the intersection of","psicoanálisis, género, educación y tecnologías digitales.":"psychoanalysis, gender, education and digital technologies.","La clínica, la docencia y la investigación como distintas maneras de formular preguntas sobre nuestro tiempo.":"Clinical practice, teaching and research offer different ways to investigate the questions of our time.","EMAIL":"EMAIL","CV EN PDF":"CV (PDF)","BUENOS AIRES / ARGENTINA":"BUENOS AIRES / ARGENTINA","DESPLAZÁ PARA EXPLORAR ↓":"SCROLL TO EXPLORE ↓","Clínica":"Clinical","psicoanalítica":"practice","cualitativa":"Qualitative","Formación":"University","universitaria":"education","01 / Perfil":"01 / Profile","La vida institucional, los vínculos sociales y las tecnologías":"Institutional life, social relationships and technologies","como territorios de lectura clínica y de investigación.":"as fields for clinical inquiry and research.","Soy licenciado en Psicología por la":"I hold a degree in Psychology from the","Universidad de la Marina Mercante":"Universidad de la Marina Mercante","y maestrando en Estudios y Políticas de Género en la":"and am pursuing a master’s degree in Gender Studies and Policy at the","Universidad Nacional de Tres de Febrero":"Universidad Nacional de Tres de Febrero",".":".","Desde 2017 desarrollo práctica clínica y actividad docente universitaria. Investigo problemas vinculados con el psicoanálisis, el género, las adolescencias y las transformaciones de los vínculos mediadas por plataformas digitales.":"Since 2017, I have maintained a clinical practice and taught at university level. My research addresses psychoanalysis, gender, adolescence and how digital platforms reshape interpersonal relationships.","Mi trabajo se articula entre la clínica particular, la docencia en UADE y UdeMM y la producción académica de orientación cualitativa.":"My work combines private clinical practice, teaching at UADE and UdeMM, and qualitative academic research.","PSICOANÁLISIS":"PSYCHOANALYSIS","GÉNERO":"GENDER","CLÍNICA":"CLINICAL PRACTICE","SUBJETIVIDAD DIGITAL":"DIGITAL SUBJECTIVITY","DOCENCIA":"TEACHING","02 / Investigación":"02 / Research","Investigación.":"Research.","Una selección de proyectos institucionales y líneas de trabajo, con sus períodos y estados claramente identificados.":"Selected institutional projects and research interests, with dates and project status clearly identified.","03 / Archivo académico":"03 / Academic archive","Producción académica.":"Academic work.","Todos":"All","Artículos":"Articles","Documentos":"Documents","Congresos":"Conferences","Extensión":"Outreach","Se distinguen las comunicaciones a congresos de los artículos de revista. Los enlaces a textos completos se incorporan solo cuando el material está publicado o autorizado para difusión.":"Conference presentations are distinguished from peer-reviewed journal articles. Full-text links are added only when material has been published or approved for public distribution.","04 / Docencia":"04 / Teaching","Materias dictadas.":"Courses taught.","Materias de grado, formación profesional y extensión universitaria.":"Undergraduate courses, professional training and university outreach.","UADE / CÁTEDRA":"UADE / COURSE","Psicoanálisis I":"Psychoanalysis I","Psicoanálisis II":"Psychoanalysis II","Conceptos fundamentales y su lectura clínica.":"Foundational concepts and their clinical interpretation.","Desarrollos postfreudianos y problemas de la práctica.":"Post-Freudian developments and questions arising in clinical practice.","Introducción a la Psicología":"Introduction to Psychology","Perspectivas, teorías y campos de intervención.":"Approaches, theories and areas of professional practice.","UDEMM / JTP · DESDE 2017":"UDEMM / TEACHING ASSISTANT · SINCE 2017","Fundamentos de Psicoanálisis I":"Foundations of Psychoanalysis I","Fundamentos de Psicoanálisis II":"Foundations of Psychoanalysis II","Docencia y acompañamiento académico en formación de grado.":"Teaching and academic support in undergraduate education.","Continuidad docente en el área de psicoanálisis.":"Ongoing teaching in psychoanalysis.","UDEMM / ANTECEDENTE":"UDEMM / PREVIOUS APPOINTMENT","Lenguaje y Comunicación":"Language and Communication","Ex docente de la cátedra.":"Former course lecturer.","05 / Trayectoria profesional":"05 / Professional career","Experiencia profesional.":"Professional experience.","Experiencia clínica, docencia, investigación y coordinación de dispositivos grupales.":"Clinical practice, university teaching, research and coordination of group-based programs.","FORMACIÓN / POSGRADO":"EDUCATION / POSTGRADUATE","Maestría en Estudios y Políticas de Género":"Master’s in Gender Studies and Policy","Universidad Nacional de Tres de Febrero · En curso.":"Universidad Nacional de Tres de Febrero · In progress.","FORMACIÓN / GRADO":"EDUCATION / UNDERGRADUATE","Licenciatura en Psicología":"Degree in Psychology","Universidad de la Marina Mercante · 2012–2017. Promedio general: 8,0.":"Universidad de la Marina Mercante · 2012–2017. Cumulative grade average: 8.0/10.","06 / En desarrollo":"06 / Current projects","Proyectos actuales.":"Current projects.","Un registro de proyectos actuales. No reemplaza el CV ni el archivo de producción formal.":"An overview of ongoing projects; it does not replace the CV or the formal academic record.","INVESTIGACIÓN / 2026":"RESEARCH / 2026","Adolescencias, videojuegos y apuestas":"Adolescents, video games and online gambling","Investigación y elaboración de materiales de orientación para familias e instituciones educativas.":"Research and development of guidance materials for families and educational institutions.","TESIS / EN DESARROLLO":"THESIS / IN PROGRESS","Grindr y subjetividad":"Grindr and subjectivity","Proyecto de tesis sobre la construcción de un yo deseable y las prácticas de presentación de sí.":"Thesis project on the construction of a desirable self and practices of self-presentation.","07 / Contacto":"07 / Contact","Continuemos la":"Let’s continue the","conversación.":"conversation.","Para consultas académicas, colaboración en investigaciones, actividades de formación y proyectos institucionales.":"For academic inquiries, research collaborations, training activities and institutional projects.","GUILLERMO OMAR FERREYRA · BUENOS AIRES":"GUILLERMO OMAR FERREYRA · BUENOS AIRES","ACTUALIZACIÓN:":"UPDATED:","OCTUBRE 2026":"OCTOBER 2026","VOLVER ARRIBA ↑":"BACK TO TOP ↑","Capítulos de libro":"Book chapters","Las publicaciones en libros, las comunicaciones a congresos y los trabajos en desarrollo se identifican por separado. Se enlazan únicamente materiales disponibles públicamente o sus fichas editoriales.":"Book chapters, conference presentations, and work in progress are listed separately. Links lead only to public materials or publisher records.","UDEMM / TUTORÍAS ACADÉMICAS":"UDEMM / THESIS SUPERVISION","Dirección y tutoría de Trabajos Integradores Finales":"Supervision of Undergraduate Capstone Projects","Selección de trabajos tutorados, entre otras tutorías realizadas en la Licenciatura en Psicología.":"Selected projects supervised as part of the Psychology degree, among other undergraduate supervisions.","Expresiones afectivas e inhibiciones en masculinidades cisgeneros de más de 50 años":"Affective expressions and inhibitions in cisgender men over 50","Estereotipos de Género en Mujeres Heterocisgénero que ejercen Psicoanálisis":"Gender stereotypes among heterosexual cisgender women practicing psychoanalysis","El Estrago Materno en adolescentes de 13 a 20 años":"Maternal ravage in adolescents aged 13 to 20","Liliana Finger · Tutor del TIF":"Liliana Finger · Capstone supervisor","Verónica Paola Stigliani · Tutor del TIF":"Verónica Paola Stigliani · Capstone supervisor","Marta Alicia Aguirre · Tutor del TIF":"Marta Alicia Aguirre · Capstone supervisor"},"ja":{"Saltar al contenido":"本文へスキップ","CLÍNICA · DOCENCIA · INVESTIGACIÓN":"臨床・教育・研究","MENÚ ☰":"メニュー ☰","Perfil":"プロフィール","Investigación":"研究","Publicaciones":"業績","Docencia":"教育","Trayectoria":"経歴","Contacto ↗":"お問い合わせ ↗","Perfil académico & profesional · 2026":"学術・専門職プロフィール · 2026","Psicólogo clínico  •  Docente universitario  •  Investigador":"臨床心理を専門とする心理士・大学教員・研究者","Trabajo en la intersección entre":"私の活動領域は","psicoanálisis, género, educación y tecnologías digitales.":"精神分析、ジェンダー、教育、デジタル技術の交差点にあります。","La clínica, la docencia y la investigación como distintas maneras de formular preguntas sobre nuestro tiempo.":"臨床、教育、研究という異なる実践を通じて、現代社会への問いを探究しています。","EMAIL":"メール","CV EN PDF":"履歴書・業績書 PDF","BUENOS AIRES / ARGENTINA":"アルゼンチン／ブエノスアイレス","DESPLAZÁ PARA EXPLORAR ↓":"下にスクロール ↓","Clínica":"臨床","psicoanalítica":"精神分析","cualitativa":"質的研究","Formación":"大学","universitaria":"教育","01 / Perfil":"01 / プロフィール","La vida institucional, los vínculos sociales y las tecnologías":"制度・社会的つながり・テクノロジーを","como territorios de lectura clínica y de investigación.":"臨床と研究の視点から読み解く。","Soy licenciado en Psicología por la":"私は","Universidad de la Marina Mercante":"マリーナ・メルカンテ大学","y maestrando en Estudios y Políticas de Género en la":"で心理学の学士号を取得し、現在は","Universidad Nacional de Tres de Febrero":"トレス・デ・フェブレロ国立大学",".":"でジェンダー研究・政策の修士課程に在籍しています。","Desde 2017 desarrollo práctica clínica y actividad docente universitaria. Investigo problemas vinculados con el psicoanálisis, el género, las adolescencias y las transformaciones de los vínculos mediadas por plataformas digitales.":"2017年より臨床実践と大学教育に従事しています。研究では、精神分析、ジェンダー、思春期・青年期、そしてデジタルプラットフォームが人間関係にもたらす変化を扱っています。","Mi trabajo se articula entre la clínica particular, la docencia en UADE y UdeMM y la producción académica de orientación cualitativa.":"個人臨床、UADEおよびUdeMMでの大学教育、質的研究を軸に活動しています。","PSICOANÁLISIS":"精神分析","GÉNERO":"ジェンダー","CLÍNICA":"臨床","SUBJETIVIDAD DIGITAL":"デジタル時代の主体性","DOCENCIA":"教育","02 / Investigación":"02 / 研究","Investigación.":"研究","Una selección de proyectos institucionales y líneas de trabajo, con sus períodos y estados claramente identificados.":"所属機関での研究プロジェクトと研究テーマを、実施期間および進捗状況とともに紹介します。","03 / Archivo académico":"03 / 研究・業績アーカイブ","Producción académica.":"研究・学術業績","Todos":"すべて","Artículos":"論文","Documentos":"資料","Congresos":"学会発表","Extensión":"公開講座・社会連携","Se distinguen las comunicaciones a congresos de los artículos de revista. Los enlaces a textos completos se incorporan solo cuando el material está publicado o autorizado para difusión.":"学会発表と学術誌掲載論文は区別して表示しています。全文へのリンクは、公開済みまたは公開許可を得た資料に限って掲載します。","04 / Docencia":"04 / 担当科目","Materias dictadas.":"担当科目","Materias de grado, formación profesional y extensión universitaria.":"学部科目、専門職研修、大学の公開教育活動。","UADE / CÁTEDRA":"UADE／担当科目","Psicoanálisis I":"精神分析 I","Psicoanálisis II":"精神分析 II","Conceptos fundamentales y su lectura clínica.":"基本概念と臨床的な読解。","Desarrollos postfreudianos y problemas de la práctica.":"フロイト以後の理論的展開と臨床実践上の課題。","Introducción a la Psicología":"心理学入門","Perspectivas, teorías y campos de intervención.":"理論的視点、学説、心理学の実践領域。","UDEMM / JTP · DESDE 2017":"UdeMM／演習担当教員・2017年より","Fundamentos de Psicoanálisis I":"精神分析の基礎 I","Fundamentos de Psicoanálisis II":"精神分析の基礎 II","Docencia y acompañamiento académico en formación de grado.":"学部教育での授業と学修支援。","Continuidad docente en el área de psicoanálisis.":"精神分析領域における継続的な教育活動。","UDEMM / ANTECEDENTE":"UdeMM／過去の担当科目","Lenguaje y Comunicación":"言語とコミュニケーション","Ex docente de la cátedra.":"以前に担当した科目。","05 / Trayectoria profesional":"05 / 職歴","Experiencia profesional.":"職務経験","Experiencia clínica, docencia, investigación y coordinación de dispositivos grupales.":"臨床実践、大学教育、研究、グループ支援プログラムの運営経験。","FORMACIÓN / POSGRADO":"学歴／大学院","Maestría en Estudios y Políticas de Género":"ジェンダー研究・政策修士課程","Universidad Nacional de Tres de Febrero · En curso.":"トレス・デ・フェブレロ国立大学・在学中。","FORMACIÓN / GRADO":"学歴／学士","Licenciatura en Psicología":"心理学学士","Universidad de la Marina Mercante · 2012–2017. Promedio general: 8,0.":"マリーナ・メルカンテ大学・2012〜2017年。総合成績平均8.0／10。","06 / En desarrollo":"06 / 進行中のプロジェクト","Proyectos actuales.":"現在のプロジェクト","Un registro de proyectos actuales. No reemplaza el CV ni el archivo de producción formal.":"進行中のプロジェクトの概要です。正式な履歴書・業績一覧に代わるものではありません。","INVESTIGACIÓN / 2026":"研究／2026年","Adolescencias, videojuegos y apuestas":"思春期・青年期、ゲーム、オンライン賭博","Investigación y elaboración de materiales de orientación para familias e instituciones educativas.":"家庭や教育機関向けの支援資料の研究・作成。","TESIS / EN DESARROLLO":"修士論文／執筆準備中","Grindr y subjetividad":"Grindrと主体性","Proyecto de tesis sobre la construcción de un yo deseable y las prácticas de presentación de sí.":"望ましい自己像の構築と自己呈示の実践をめぐる修士論文計画。","07 / Contacto":"07 / お問い合わせ","Continuemos la":"ご連絡","conversación.":"ください。","Para consultas académicas, colaboración en investigaciones, actividades de formación y proyectos institucionales.":"学術的なお問い合わせ、共同研究、研修活動、機関間プロジェクトに関するご連絡をお待ちしています。","GUILLERMO OMAR FERREYRA · BUENOS AIRES":"ギジェルモ・オマール・フェレイラ · ブエノスアイレス","ACTUALIZACIÓN:":"最終更新：","OCTUBRE 2026":"2026年10月","VOLVER ARRIBA ↑":"ページ上部へ ↑","Capítulos de libro":"書籍の章","Las publicaciones en libros, las comunicaciones a congresos y los trabajos en desarrollo se identifican por separado. Se enlazan únicamente materiales disponibles públicamente o sus fichas editoriales.":"書籍所収論考、学会発表、進行中の研究を区別して掲載しています。リンクは公開資料または出版社の書誌情報に限っています。","UDEMM / TUTORÍAS ACADÉMICAS":"UdeMM／卒業研究の指導","Dirección y tutoría de Trabajos Integradores Finales":"学部卒業研究（TIF）の指導・助言","Selección de trabajos tutorados, entre otras tutorías realizadas en la Licenciatura en Psicología.":"心理学学士課程で指導した卒業研究の一部を紹介します。このほかにも指導実績があります。","Expresiones afectivas e inhibiciones en masculinidades cisgeneros de más de 50 años":"50歳を超えるシスジェンダー男性の感情表現と抑制","Estereotipos de Género en Mujeres Heterocisgénero que ejercen Psicoanálisis":"精神分析を実践する異性愛・シスジェンダー女性におけるジェンダー・ステレオタイプ","El Estrago Materno en adolescentes de 13 a 20 años":"13～20歳の青年における母親との関係に由来する「母性的荒廃」","Liliana Finger · Tutor del TIF":"Liliana Finger · 卒業研究指導教員","Verónica Paola Stigliani · Tutor del TIF":"Verónica Paola Stigliani · 卒業研究指導教員","Marta Alicia Aguirre · Tutor del TIF":"Marta Alicia Aguirre · 卒業研究指導教員"}};
   const titles = {
     es:'Guillermo Ferreyra — Psicología · Docencia · Investigación',
     en:'Guillermo Ferreyra — Psychology · Teaching · Research',

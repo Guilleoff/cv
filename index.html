@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#103e31">
+<meta name="description" content="Guillermo Omar Ferreyra, psicólogo clínico, docente universitario e investigador en Buenos Aires. Docencia, investigación y archivo académico.">
+<meta property="og:title" content="Guillermo Ferreyra — Clínica, docencia e investigación">
+<meta property="og:description" content="Psicoanálisis, género y subjetividad digital. Trayectoria, proyectos y producción académica.">
+<title>Guillermo Ferreyra — Psicología · Docencia · Investigación</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23103e31'/%3E%3Crect x='5' y='5' width='54' height='54' rx='7' fill='none' stroke='%23cbaa64' stroke-width='2'/%3E%3Ctext x='32' y='41' fill='%23e6d399' font-family='Georgia' font-size='26' text-anchor='middle'%3EGF%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+ --deep:#092e26; --dark:#103e31; --forest:#164e3c; --sea:#23684d;
+ --jade:#33785a; --sage:#b7d0bb; --mist:#e4eee0; --pale:#d5e5d4;
+ --gold:#bd9a50; --gold-light:#eed49c; --gold-muted:#d6bc7c; --text:#173f31;
+ --quiet:#557361; --border:rgba(189,154,80,.62); --sans:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+ --serif:Georgia,'Times New Roman',serif; --mono:ui-monospace,SFMono-Regular,Consolas,monospace;
+ --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{margin:0;background:var(--deep);color:var(--mist);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+::selection{background:var(--gold-light);color:var(--deep)}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold-light);outline-offset:4px}
+.skip{position:absolute;left:8px;top:-80px;background:var(--gold-light);color:var(--deep);z-index:200;padding:13px}.skip:focus{top:8px}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(9,46,38,.96);border-bottom:1px solid var(--border);backdrop-filter:blur(14px)}
+.header-in{max-width:1420px;padding:0 44px;min-height:82px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.brand-seal{height:48px;width:48px;display:grid;place-items:center;border:1px solid var(--gold-light);outline:1px solid rgba(238,212,156,.38);outline-offset:-5px;font:20px var(--serif);color:var(--gold-light);background:#134c3b}
+.brand-copy{display:grid;gap:3px}.brand-copy strong{font:600 13px var(--sans);letter-spacing:.085em;text-transform:uppercase}.brand-copy small{font:9px var(--mono);letter-spacing:.15em;color:var(--sage)}
+.nav{display:flex;align-items:center;gap:27px}.nav a{font-size:11px;color:#d4e0d3;font-weight:500;transition:color .2s}.nav a:hover{color:var(--gold-light)}
+.nav .nav-cta{border:1px solid var(--gold);padding:12px 16px;color:var(--gold-light)}
+.menu-button{display:none;border:1px solid var(--gold);padding:11px 13px;background:transparent;color:var(--gold-light);cursor:pointer}
+.page-shell{max-width:1420px;margin:auto;padding:0 44px}
+.hero{position:relative;min-height:735px;padding:38px 0 33px;background:radial-gradient(circle at 84% 20%,rgba(52,121,89,.32),transparent 33%),linear-gradient(135deg,#0b392e,#124938 59%,#0c342c);overflow:hidden}
+.hero:before{content:'';position:absolute;inset:0;opacity:.13;pointer-events:none;background-image:repeating-linear-gradient(130deg,transparent 0,transparent 28px,rgba(238,212,156,.1) 29px,transparent 30px)}
+.hero-wrap{max-width:1420px;margin:0 auto;padding:0 44px;position:relative;z-index:1;height:100%}
+.hero-border{border:1px solid var(--gold);padding:7px;min-height:650px;position:relative}
+.hero-border:after{content:'';position:absolute;inset:13px;border:1px solid rgba(226,193,120,.35);pointer-events:none}
+.hero-grid{min-height:633px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(330px,.75fr);gap:35px;padding:76px 60px 53px;align-items:center}
+.hero-copy{position:relative;z-index:2}
+.kicker{font:10px/1.7 var(--mono);text-transform:uppercase;letter-spacing:.16em;color:var(--gold-light);margin:0 0 38px;display:flex;align-items:center;gap:14px}
+.kicker:before{content:'';display:inline-block;width:28px;height:1px;background:var(--gold-light)}
+.hero h1{font-family:var(--serif);font-size:clamp(75px,8vw,126px);font-weight:400;line-height:.87;letter-spacing:-.07em;margin:0 0 33px}
+.hero h1 em{font-style:normal;color:var(--gold-light);display:block;margin-top:8px}
+.hero-role{font:11px/1.8 var(--mono);color:#d9e9d7;letter-spacing:.09em;text-transform:uppercase;margin:0 0 24px}
+.hero-summary{font:400 clamp(16px,1.5vw,21px)/1.62 var(--serif);max-width:610px;color:#dbe8d8;margin:0 0 34px}
+.hero-summary strong{font-weight:normal;color:var(--gold-light)}
+.hero-links{display:flex;gap:12px;flex-wrap:wrap}
+.button{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;padding:15px 19px;border:1px solid var(--gold);font:10px var(--mono);letter-spacing:.08em;min-height:48px;transition:transform .15s,background .15s}
+.button:hover{transform:translateY(-2px)}.button.primary{background:var(--gold-light);color:var(--deep);border-color:var(--gold-light)}.button.secondary{color:var(--gold-light)}
+.emblem{position:relative;min-height:455px;display:grid;place-items:center;border:1px solid rgba(224,192,125,.62);background:radial-gradient(circle at center,#266b51 0%,#174c3a 52%,#0c352b 100%);overflow:hidden}
+.emblem:before{content:'';position:absolute;inset:9px;border:1px solid rgba(238,212,156,.4)}
+.emblem:after{content:'';position:absolute;width:490px;height:490px;border:1px solid rgba(238,212,156,.2);transform:rotate(45deg)}
+.emblem svg{width:min(92%,465px);height:auto;position:relative;z-index:2;filter:drop-shadow(0 10px 16px rgba(0,0,0,.07))}
+.emblem-caption{position:absolute;bottom:31px;font:10px var(--mono);letter-spacing:.18em;color:var(--gold-light);z-index:3}
+.corner{position:absolute;width:26px;height:26px;z-index:5;border-color:var(--gold-light);pointer-events:none}
+.corner.tl{top:0;left:0;border-top:3px solid;border-left:3px solid}.corner.tr{top:0;right:0;border-top:3px solid;border-right:3px solid}.corner.bl{bottom:0;left:0;border-bottom:3px solid;border-left:3px solid}.corner.br{bottom:0;right:0;border-bottom:3px solid;border-right:3px solid}
+.hero-note{display:flex;justify-content:space-between;gap:20px;padding:23px 8px 0;color:#b8cdb8;font:10px var(--mono);letter-spacing:.1em}
+.gold-rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.75}
+.motto{background:#184e3d;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.motto-inner{max-width:1300px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:0 30px}
+.motto-item{min-height:125px;display:flex;align-items:center;gap:19px;padding:24px 42px;border-right:1px solid rgba(238,212,156,.26)}.motto-item:last-child{border-right:0}
+.motto-number{font:italic 48px var(--serif);color:var(--gold-light)}.motto-label{font:10px/1.7 var(--mono);letter-spacing:.09em;color:#cddfce;text-transform:uppercase}
+.section{position:relative;padding:103px 0 118px;overflow:hidden}
+.section.light{background:var(--mist);color:var(--text)}.section.sage{background:var(--pale);color:var(--text)}
+.section.dark{background:linear-gradient(150deg,#0d3a2e,#15513e);color:#e6f0e5}
+.section.medium{background:linear-gradient(180deg,#1b6048,#1a513e);color:#e6f0e5}
+.section .container{max-width:var(--max);padding:0 28px;margin:auto;position:relative;z-index:1}
+.section-head{display:flex;align-items:start;justify-content:space-between;gap:45px;margin-bottom:57px}
+.section-tag{font:10px/1.65 var(--mono);text-transform:uppercase;letter-spacing:.14em;color:#8a743b;display:flex;align-items:center;gap:13px;margin:0 0 23px}
+.section-tag:before{content:'';height:1px;width:32px;background:currentColor}
+.dark .section-tag,.medium .section-tag{color:var(--gold-light)}
+.section h2{font:400 clamp(47px,5.5vw,77px)/1.03 var(--serif);letter-spacing:-.06em;margin:0}
+.section h2 em{color:#24714f;font-style:italic}.dark h2 em,.medium h2 em{color:var(--gold-light)}
+.section-intro{max-width:320px;font:15px/1.72 var(--sans);margin:54px 0 0;color:var(--quiet)}.dark .section-intro,.medium .section-intro{color:#bfd8c4}
+.profile-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;border-top:1px solid var(--border);padding-top:48px}
+.profile-statement{font:normal clamp(28px,3.35vw,46px)/1.18 var(--serif);letter-spacing:-.035em;margin:0;color:#164c3a}
+.profile-right p{font:15px/1.85 var(--sans);margin:0 0 19px;color:#355846}.profile-right strong{color:#144833}
+.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.tags span{font:10px var(--mono);letter-spacing:.025em;padding:10px 12px;border:1px solid rgba(155,118,45,.64);background:rgba(37,113,79,.04);color:#285841}
+.section-ornament{position:absolute;right:-80px;bottom:-100px;width:500px;height:500px;border-radius:50%;border:1px solid rgba(189,154,80,.13);pointer-events:none}
+.frame{position:relative;border:1px solid var(--border)}.frame:before{content:'';position:absolute;inset:5px;border:1px solid rgba(189,154,80,.2);pointer-events:none}
+.research-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.research-card{min-height:333px;padding:32px 35px;display:flex;flex-direction:column;background:linear-gradient(145deg,rgba(33,103,76,.45),rgba(14,63,47,.35));border:1px solid rgba(218,186,108,.65);position:relative;transition:background .2s,transform .2s}
+.research-card:hover{background:rgba(32,102,73,.72);transform:translateY(-3px)}
+.research-card:after{content:'';position:absolute;inset:7px;border:1px solid rgba(218,186,108,.2);pointer-events:none}
+.research-top{display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-bottom:33px;color:var(--gold-light);font:10px/1.5 var(--mono);letter-spacing:.06em}
+.research-card h3{font:normal clamp(27px,3vw,39px)/1.13 var(--serif);letter-spacing:-.03em;margin:0 0 15px;color:#edf2df}
+.research-card p{font:13px/1.7 var(--sans);color:#ccddcc;margin:0 0 29px;max-width:540px}
+.research-bottom{margin-top:auto;border-top:1px solid rgba(238,212,156,.3);padding-top:15px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+.research-bottom span{font:10px var(--mono);color:var(--gold-light)}.research-bottom small{font:10px var(--mono);color:#a9c7ad}
+.archive-frame{border:1px solid rgba(161,124,46,.8);padding:30px;background:rgba(245,251,241,.44);box-shadow:inset 0 0 0 7px rgba(218,191,121,.11)}
+.archive-controls{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-bottom:23px;flex-wrap:wrap}
+.archive-count{font:10px var(--mono);color:#637663;text-transform:uppercase;letter-spacing:.12em}.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filter{cursor:pointer;background:transparent;border:1px solid #a2a982;color:#265a40;font:11px var(--mono);padding:11px 13px}
+.filter:hover,.filter.active{background:var(--forest);color:var(--gold-light);border-color:var(--gold)}
+.work-entry{display:grid;grid-template-columns:70px minmax(0,1fr) 140px;gap:18px;padding:25px 0;border-top:1px solid rgba(151,136,82,.45)}
+.work-year{font:11px var(--mono);color:#527554;padding-top:4px}.work-entry h3{font:normal 23px/1.24 var(--serif);margin:0 0 8px;color:#164734}
+.work-entry h3 a{border-bottom:1px solid var(--gold);}.work-entry p{font:13px/1.6 var(--sans);color:#506c59;margin:0 0 9px}
+.work-status{font:10px/1.5 var(--mono);color:#657e63}.work-type{font:10px/1.4 var(--mono);letter-spacing:.02em;text-align:right;color:#6e713d}
+.no-results{padding:28px 0;font:14px/1.7 var(--sans);color:#456649}
+.archive-note{font:12px/1.7 var(--sans);color:#526c56;margin:24px 0 0}
+.teaching-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.course{padding:26px;min-height:248px;background:rgba(12,63,46,.28);border:1px solid rgba(238,212,156,.64);position:relative;display:flex;flex-direction:column}
+.course:before{content:'';position:absolute;inset:6px;border:1px solid rgba(238,212,156,.17);pointer-events:none}
+.course small{font:10px var(--mono);letter-spacing:.1em;color:var(--gold-light)}
+.course-number{font:italic 36px var(--serif);color:#7fb796;margin:17px 0 19px}
+.course h3{font:normal 25px/1.14 var(--serif);margin:auto 0 14px;color:#f3f3e3}
+.course p{font:12px/1.65 var(--sans);color:#c7dcca;margin:0}
+.teaching-note{margin-top:22px;border-left:3px solid var(--gold-light);padding:6px 0 6px 22px;max-width:930px;color:#d1e0d0;font:13px/1.8 var(--sans)}
+.career-list{border-top:1px solid rgba(147,119,63,.58)}
+.career-row{display:grid;grid-template-columns:150px minmax(0,.8fr) minmax(0,1.2fr);gap:30px;border-bottom:1px solid rgba(147,119,63,.42);padding:27px 0;align-items:start}
+.career-year{font:11px/1.7 var(--mono);color:#6c764f}.career-row h3{font:normal 22px/1.17 var(--serif);margin:0 0 9px;color:#1a4f36}
+.career-org{font:11px/1.55 var(--mono);color:#657758}.career-row p{font:13px/1.74 var(--sans);margin:0;color:#496c52}
+.education{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-top:46px}
+.education article{padding:28px;background:#e0ebdc;border:1px solid rgba(171,134,54,.7)}
+.education small{font:10px var(--mono);color:#8e722f}.education h3{font:normal 25px/1.2 var(--serif);color:#184e35;margin:27px 0 15px}.education p{font:13px/1.55 var(--sans);color:#557461;margin:0}
+.now-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.now-card{border:1px solid rgba(238,212,156,.6);padding:29px 33px;min-height:245px;background:rgba(12,57,45,.42)}
+.now-card small{font:10px var(--mono);color:var(--gold-light)}.now-card h3{font:normal 31px/1.14 var(--serif);margin:32px 0 12px;color:#edf4e6}
+.now-card p{font:13px/1.6 var(--sans);color:#bdd2c1;margin:0}
+.contact{background:#0c332a;border-top:1px solid var(--gold);padding:86px 0 35px}
+.contact-border{border:1px solid var(--gold);padding:57px 66px;position:relative}
+.contact-border:before{content:'';inset:8px;position:absolute;border:1px solid rgba(238,212,156,.27);pointer-events:none}
+.contact h2{font:normal clamp(52px,7vw,93px)/1 var(--serif);letter-spacing:-.055em;margin:0 0 28px;color:#ecf2e4}
+.contact h2 em{color:var(--gold-light);font-style:italic}.contact p{font:15px/1.7 var(--sans);color:#c2d5c3;max-width:620px;margin:0 0 30px}
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap}
+.footer{padding-top:28px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:#a8bfab;font:10px/1.7 var(--mono);letter-spacing:.05em}
+.footer a:hover{color:var(--gold-light)}
+@media(max-width:1080px){.header-in,.hero-wrap,.page-shell{padding-left:26px;padding-right:26px}.hero-grid{padding:62px 40px 54px;grid-template-columns:minmax(0,1fr) minmax(260px,.76fr)}.hero h1{font-size:clamp(65px,8vw,96px)}.motto-item{padding:23px 20px}.nav{gap:17px}.career-row{grid-template-columns:120px minmax(0,1fr)}.career-row p{grid-column:2}}
+@media(max-width:780px){html{scroll-padding-top:70px}.header-in{min-height:70px;padding:0 18px}.brand-seal{height:42px;width:42px}.brand-copy small{font-size:8px}.brand-copy strong{font-size:11px}.menu-button{display:block}.nav{display:none;position:absolute;top:69px;left:0;right:0;background:#0b362b;padding:16px 22px 26px;border-bottom:1px solid var(--gold);flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:13px 0;font-size:13px;border-bottom:1px solid rgba(238,212,156,.15)}.nav .nav-cta{text-align:center;margin-top:12px;padding:14px}.hero{min-height:auto;padding:21px 0 24px}.hero-wrap{padding:0 17px}.hero-border{min-height:0;padding:5px}.hero-border:after{inset:10px}.hero-grid{padding:48px 24px 34px;grid-template-columns:1fr;gap:40px}.hero h1{font-size:clamp(58px,12.4vw,90px)}.hero-summary{font-size:17px}.emblem{min-height:300px;max-height:380px}.emblem svg{width:min(78%,300px);transform:translateY(-12px)}.emblem-caption{bottom:14px;font-size:8px}.hero-note{padding:18px 4px 0;font-size:9px}.hero-note span:last-child{display:none}.motto-inner{grid-template-columns:repeat(3,1fr);padding:0 8px}.motto-item{display:block;text-align:center;padding:18px 5px;min-height:100px}.motto-number{font-size:31px;display:block}.motto-label{font-size:8px}.section{padding:74px 0 88px}.section .container{padding:0 20px}.section-head{display:block;margin-bottom:35px}.section h2{font-size:clamp(43px,10vw,69px)}.section-intro{margin:21px 0 0}.profile-layout{grid-template-columns:1fr;gap:23px;padding-top:30px}.profile-statement{font-size:32px}.research-list{grid-template-columns:1fr}.research-card{min-height:270px}.archive-frame{padding:18px}.work-entry{grid-template-columns:56px 1fr;gap:12px}.work-type{grid-column:2;text-align:left}.teaching-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.course{min-height:245px;padding:21px}.career-row{grid-template-columns:1fr;gap:7px}.career-row p{grid-column:auto}.education,.now-grid{grid-template-columns:1fr}.contact{padding:55px 0 25px}.contact-border{padding:42px 25px}.contact h2{font-size:clamp(46px,11vw,73px)}}
+@media(max-width:480px){.brand-copy small{display:none}.hero-grid{padding:42px 19px 29px}.hero h1{font-size:clamp(49px,13vw,67px)}.kicker{font-size:9px}.hero-role{font-size:10px}.hero-links{display:grid}.emblem{min-height:254px}.teaching-grid{grid-template-columns:1fr}.course{min-height:204px}.course-number{font-size:25px;margin:12px 0}.course h3{font-size:25px}.motto-label{font-size:7px}.contact-actions{display:grid}.contact-border{padding:36px 19px}.work-entry h3{font-size:21px}.hero-note{font-size:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Revisión editorial: portada sin iconografía y títulos académicos directos */
+.hero-grid{grid-template-columns:minmax(0,1fr);min-height:633px;padding:80px clamp(38px,8vw,114px) 76px;gap:0;align-items:center}
+.hero-copy{max-width:1010px}
+.hero h1{font-size:clamp(76px,9.8vw,147px);margin-bottom:42px}
+.hero-role{font-size:12px}
+.hero-summary{max-width:750px;font-size:clamp(18px,1.65vw,23px)}
+.hero-links{gap:14px}
+.hero-links .button{min-width:176px}
+.hero-border{background:radial-gradient(ellipse at 85% 15%,rgba(59,128,91,.25),transparent 55%)}
+.hero-border:before{content:'';position:absolute;right:6%;top:18%;width:19%;height:56%;border-right:1px solid rgba(238,212,156,.18);border-top:1px solid rgba(238,212,156,.15);pointer-events:none}
+.profile-heading{display:block;margin-bottom:46px}
+.section .profile-heading h2{font-size:clamp(37px,4.3vw,64px);max-width:1020px;line-height:1.16;letter-spacing:-.047em}
+.profile-layout{grid-template-columns:minmax(0,1fr);max-width:920px;padding-top:35px;gap:0}
+.profile-right>p:first-child{font:normal clamp(20px,2vw,27px)/1.58 var(--serif);color:#194c39;max-width:900px;margin-bottom:26px}
+.profile-right p{max-width:850px}
+@media(max-width:1080px){.hero-grid{grid-template-columns:1fr;padding:70px 48px}.hero h1{font-size:clamp(66px,11vw,118px)}}
+@media(max-width:780px){.hero-grid{padding:61px 28px 60px;gap:0}.hero h1{font-size:clamp(53px,12vw,89px)}.hero-summary{font-size:18px}.section .profile-heading h2{font-size:clamp(34px,7.2vw,53px)}.profile-layout{grid-template-columns:1fr;padding-top:30px}}
+@media(max-width:480px){.hero-grid{padding:56px 21px 52px}.hero h1{font-size:clamp(48px,12.6vw,66px)}.hero-links{display:grid}.hero-links .button{min-width:0}.section .profile-heading h2{font-size:clamp(32px,8.2vw,40px)}.profile-heading{margin-bottom:30px}}
+
+/* Selector de idioma: integrado a la cabecera original, sin reconstruir el layout. */
+.header-right{display:flex;align-items:center;gap:22px;min-width:0}
+.lang-switch{display:inline-flex;align-items:center;flex-shrink:0;border:1px solid var(--gold);padding:3px;gap:2px;background:rgba(9,46,38,.65);position:relative;z-index:51}
+.lang-option{border:0;background:transparent;color:var(--sage);font:600 10px/1.2 var(--mono);padding:10px 9px;min-height:35px;cursor:pointer;white-space:nowrap;transition:background .16s,color .16s}
+.lang-option:hover{color:var(--gold-light);background:rgba(238,212,156,.1)}
+.lang-option[aria-pressed="true"]{color:var(--deep);background:var(--gold-light)}
+html[lang="ja"] body{font-family:var(--sans),"Noto Sans CJK JP","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif}
+html[lang="ja"] .hero h1,html[lang="ja"] .section h2,html[lang="ja"] .contact h2{letter-spacing:-.015em}
+html[lang="ja"] .hero h1{font-size:clamp(72px,7.4vw,112px)}
+html[lang="ja"] .section h2{font-size:clamp(35px,4vw,61px);line-height:1.37}
+html[lang="ja"] .contact h2{font-size:clamp(46px,6vw,80px);line-height:1.3}
+html[lang="ja"] .section .profile-heading h2{font-size:clamp(34px,3.45vw,56px);line-height:1.55}
+html[lang="ja"] .hero-summary,html[lang="ja"] .profile-right p{line-height:1.95}
+html[lang="ja"] .section-head{gap:30px}
+@media(max-width:1120px){
+ .header-right{gap:11px}
+ .menu-button{display:block}
+ .nav{display:none;position:absolute;top:81px;left:0;right:0;background:#0b362b;padding:16px 22px 26px;border-bottom:1px solid var(--gold);flex-direction:column;align-items:stretch;gap:0}
+ .nav.open{display:flex}
+ .nav a{padding:13px 0;font-size:13px;border-bottom:1px solid rgba(238,212,156,.15)}
+ .nav .nav-cta{text-align:center;margin-top:12px;padding:14px}
+}
+@media(max-width:780px){.nav{top:69px}.header-in{gap:9px}.header-right{gap:8px}.brand{gap:9px}.lang-option{font-size:10px;padding:8px 7px;min-height:34px}}
+@media(max-width:410px){.brand-copy strong{font-size:10px}.brand-seal{height:34px;width:34px;font-size:16px}.lang-option{font-size:9px;padding:8px 6px}.menu-button{padding:9px;font-size:10px}}
+@media(max-width:345px){.brand-copy strong{display:none}.brand{gap:0}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header"><div class="header-in">
+<a class="brand" href="#inicio" aria-label="Volver al inicio"><span class="brand-seal">GF</span><span class="brand-copy"><strong>Guillermo Ferreyra</strong><small>CLÍNICA · DOCENCIA · INVESTIGACIÓN</small></span></a>
+<div class="header-right"><nav id="nav" class="nav" aria-label="Navegación principal"><a href="#perfil">Perfil</a><a href="#investigacion">Investigación</a><a href="#produccion">Publicaciones</a><a href="#docencia">Docencia</a><a href="#trayectoria">Trayectoria</a><a class="nav-cta" href="#contacto">Contacto ↗</a></nav>
+<div class="lang-switch" role="group" aria-label="Idioma / Language / 言語"><button type="button" class="lang-option" data-lang="es" lang="es" aria-pressed="true" aria-label="Español">ES</button><button type="button" class="lang-option" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button><button type="button" class="lang-option" data-lang="ja" lang="ja" aria-pressed="false" aria-label="日本語">日本語</button></div>
+<button class="menu-button" type="button" aria-controls="nav" aria-expanded="false">MENÚ ☰</button></div>
+</div></header>
+<main id="contenido">
+<section class="hero" id="inicio"><div class="hero-wrap"><div class="hero-border">
+<span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+<div class="hero-grid"><div class="hero-copy">
+<p class="kicker">Perfil académico &amp; profesional · 2026</p>
+<h1>Guillermo <em>Ferreyra.</em></h1>
+<p class="hero-role">Psicólogo clínico &nbsp;•&nbsp; Docente universitario &nbsp;•&nbsp; Investigador</p>
+<p class="hero-summary">Trabajo en la intersección entre <strong>psicoanálisis, género, educación y tecnologías digitales.</strong> La clínica, la docencia y la investigación como distintas maneras de formular preguntas sobre nuestro tiempo.</p>
+<div class="hero-links"><a class="button primary" href="mailto:guilleoff@gmail.com">EMAIL <span>↗</span></a><a class="button secondary" href="CV_Guillermo_Omar_Ferreyra_2026.pdf" download>CV EN PDF <span>↓</span></a></div>
+</div>
+</div></div><div class="hero-note"><span>BUENOS AIRES / ARGENTINA</span><span>DESPLAZÁ PARA EXPLORAR ↓</span></div></div></section>
+<div class="motto"><div class="motto-inner"><div class="motto-item"><span class="motto-number">01</span><span class="motto-label">Clínica<br>psicoanalítica</span></div><div class="motto-item"><span class="motto-number">02</span><span class="motto-label">Investigación<br>cualitativa</span></div><div class="motto-item"><span class="motto-number">03</span><span class="motto-label">Formación<br>universitaria</span></div></div></div>
+<section class="section light" id="perfil"><div class="section-ornament"></div><div class="container">
+<p class="section-tag">01 / Perfil</p><div class="section-head profile-heading"><h2>La vida institucional, los vínculos sociales y las tecnologías <em>como territorios de lectura clínica y de investigación.</em></h2></div>
+<div class="profile-layout"><div class="profile-right"><p>Soy licenciado en Psicología por la <strong>Universidad de la Marina Mercante</strong> y maestrando en Estudios y Políticas de Género en la <strong>Universidad Nacional de Tres de Febrero</strong>.</p><p>Desde 2017 desarrollo práctica clínica y actividad docente universitaria. Investigo problemas vinculados con el psicoanálisis, el género, las adolescencias y las transformaciones de los vínculos mediadas por plataformas digitales.</p><p>Mi trabajo se articula entre la clínica particular, la docencia en UADE y UdeMM y la producción académica de orientación cualitativa.</p><div class="tags"><span>PSICOANÁLISIS</span><span>GÉNERO</span><span>CLÍNICA</span><span>SUBJETIVIDAD DIGITAL</span><span>DOCENCIA</span></div></div></div>
+</div></section>
+<section class="section dark" id="investigacion"><div class="container"><p class="section-tag">02 / Investigación</p><div class="section-head"><h2>Investigación.</h2><p class="section-intro">Una selección de proyectos institucionales y líneas de trabajo, con sus períodos y estados claramente identificados.</p></div><div id="research-list" class="research-list"></div></div></section>
+<section class="section sage" id="produccion"><div class="container"><p class="section-tag">03 / Archivo académico</p><div class="section-head"><h2>Producción académica.</h2></div>
+<div class="archive-frame"><div class="archive-controls"><span id="result-count" class="archive-count" aria-live="polite"></span><div class="filters" role="group" aria-label="Filtrar trabajos"><button class="filter active" data-filter="todos" aria-pressed="true">Todos</button><button class="filter" data-filter="articulos" aria-pressed="false">Artículos</button><button class="filter" data-filter="documentos" aria-pressed="false">Documentos</button><button class="filter" data-filter="congresos" aria-pressed="false">Congresos</button><button class="filter" data-filter="formacion" aria-pressed="false">Extensión</button></div></div><div id="work-list"></div></div>
+<p class="archive-note">Se distinguen las comunicaciones a congresos de los artículos de revista. Los enlaces a textos completos se incorporan solo cuando el material está publicado o autorizado para difusión.</p>
+</div></section>
+<section class="section medium" id="docencia"><div class="container"><p class="section-tag">04 / Docencia</p><div class="section-head"><h2>Materias dictadas.</h2><p class="section-intro">Materias de grado, formación profesional y extensión universitaria.</p></div>
+<div class="teaching-grid">
+<article class="course"><small>UADE / CÁTEDRA</small><span class="course-number">01</span><h3>Psicoanálisis I</h3><p>Conceptos fundamentales y su lectura clínica.</p></article>
+<article class="course"><small>UADE / CÁTEDRA</small><span class="course-number">02</span><h3>Psicoanálisis II</h3><p>Desarrollos postfreudianos y problemas de la práctica.</p></article>
+<article class="course"><small>UADE / CÁTEDRA</small><span class="course-number">03</span><h3>Introducción a la Psicología</h3><p>Perspectivas, teorías y campos de intervención.</p></article>
+<article class="course"><small>UDEMM / JTP · DESDE 2017</small><span class="course-number">04</span><h3>Fundamentos de Psicoanálisis I</h3><p>Docencia y acompañamiento académico en formación de grado.</p></article>
+<article class="course"><small>UDEMM / JTP · DESDE 2017</small><span class="course-number">05</span><h3>Fundamentos de Psicoanálisis II</h3><p>Continuidad docente en el área de psicoanálisis.</p></article>
+<article class="course"><small>UDEMM / ANTECEDENTE</small><span class="course-number">06</span><h3>Lenguaje y Comunicación</h3><p>Ex docente de la cátedra.</p></article>
+</div></div></section>
+<section class="section light" id="trayectoria"><div class="container"><p class="section-tag">05 / Trayectoria profesional</p><div class="section-head"><h2>Experiencia profesional.</h2><p class="section-intro">Experiencia clínica, docencia, investigación y coordinación de dispositivos grupales.</p></div><div id="experience-list" class="career-list"></div>
+<div class="education"><article><small>FORMACIÓN / POSGRADO</small><h3>Maestría en Estudios y Políticas de Género</h3><p>Universidad Nacional de Tres de Febrero · En curso.</p></article><article><small>FORMACIÓN / GRADO</small><h3>Licenciatura en Psicología</h3><p>Universidad de la Marina Mercante · 2012–2017. Promedio general: 8,0.</p></article></div>
+</div></section>
+<section class="section dark" id="actualidad"><div class="container"><p class="section-tag">06 / En desarrollo</p><div class="section-head"><h2>Proyectos actuales.</h2><p class="section-intro">Un registro de proyectos actuales. No reemplaza el CV ni el archivo de producción formal.</p></div><div class="now-grid"><article class="now-card"><small>INVESTIGACIÓN / 2026</small><h3>Adolescencias, videojuegos y apuestas</h3><p>Investigación y elaboración de materiales de orientación para familias e instituciones educativas.</p></article><article class="now-card"><small>TESIS / EN DESARROLLO</small><h3>Grindr y subjetividad</h3><p>Proyecto de tesis sobre la construcción de un yo deseable y las prácticas de presentación de sí.</p></article></div></div></section>
+<section class="contact" id="contacto"><div class="page-shell"><div class="contact-border"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><p class="section-tag" style="color:var(--gold-light)">07 / Contacto</p><h2>Continuemos la<br><em>conversación.</em></h2><p>Para consultas académicas, colaboración en investigaciones, actividades de formación y proyectos institucionales.</p><div class="contact-actions"><a class="button primary" href="mailto:guilleoff@gmail.com">EMAIL <span>↗</span></a><a class="button secondary" href="CV_Guillermo_Omar_Ferreyra_2026.pdf" download>CV EN PDF <span>↓</span></a></div></div><footer class="footer"><span>© <span id="year">2026</span> GUILLERMO OMAR FERREYRA · BUENOS AIRES</span><span>ACTUALIZACIÓN: <span id="updated">OCTUBRE 2026</span></span><a href="#inicio">VOLVER ARRIBA ↑</a></footer></div></section>
+</main>
+<script>
+/* Datos editables: títulos, experiencia y archivo académico */
+window.SITIO = {
+  updated: "Octubre de 2026",
+  name: "Guillermo Omar Ferreyra",
+  contact: {
+    email: "guilleoff@gmail.com"
+  },
+  research: [
+    {
+      number: "01",
+      period: "2025 — 2026",
+      place: "UADE · Proyecto A23S17",
+      title: "Apuestas online, videojuegos y adolescencias",
+      description: "Investigación cualitativa sobre apuestas online, compras digitales y lógicas de plataforma, con trabajo con familias, docentes y profesionales. Incluye producción de materiales de orientación y actividades preventivas.",
+      themes: [
+        "Adolescencias",
+        "Plataformas digitales",
+        "Prevención"
+      ],
+      state: "Proyecto de investigación"
+    },
+    {
+      number: "02",
+      period: "EN DESARROLLO",
+      place: "UNTREF · Maestría en Estudios y Políticas de Género",
+      title: "Grindr y la construcción del yo deseable",
+      description: "Proyecto de tesis sobre deseo, presentación de sí y formas contemporáneas de subjetivación entre varones gays en CABA, en diálogo con el psicoanálisis, Foucault, Butler y los estudios de género.",
+      themes: [
+        "Subjetividad",
+        "Sexualidad",
+        "Aplicaciones de citas"
+      ],
+      state: "Proyecto de tesis"
+    },
+    {
+      number: "03",
+      period: "2020 — 2021",
+      place: "UdeMM · Investigación",
+      title: "Psicoterapia y diversidad sexual y de género",
+      description: "Estudio de las perspectivas de pacientes y terapeutas sobre la compatibilidad de las intervenciones psicoterapéuticas con las experiencias de personas pertenecientes a minorías sexuales o de género.",
+      themes: [
+        "Clínica",
+        "Diversidad",
+        "Psicoterapia"
+      ],
+      state: "Proyecto de investigación"
+    },
+    {
+      number: "04",
+      period: "2018 — 2020",
+      place: "UdeMM · Investigación",
+      title: "Motivos de consulta en clínica psicoanalítica",
+      description: "Investigación sobre los motivos de consulta de personas adultas atendidas en una institución psicoterapéutica de orientación psicoanalítica de la Ciudad de Buenos Aires.",
+      themes: [
+        "Psicoanálisis",
+        "Práctica clínica"
+      ],
+      state: "Proyecto de investigación"
+    }
+  ],
+  works: [
+    {
+      year: "2026",
+      category: "documentos",
+      type: "Guía de orientación",
+      status: "Documento elaborado · sin enlace público",
+      title: "Videojuegos, compras digitales y apuestas online",
+      detail: "Material de orientación para familias, docentes y profesionales, desarrollado a partir del proyecto UADE A23S17.",
+      url: ""
+    },
+    {
+      year: "2026",
+      category: "documentos",
+      type: "Escrito académico",
+      status: "Aprobado para presentación · verificar publicación",
+      title: "La pedagogía del límite después del negocio: apuestas online, adolescencia y dispositivos de limpieza simbólica",
+      detail: "Texto de reflexión e investigación sobre la responsabilidad adulta e institucional frente a los dispositivos digitales de apuestas.",
+      url: ""
+    },
+    {
+      year: "2018",
+      category: "congresos",
+      type: "Comunicación en congreso",
+      status: "Presentación académica",
+      title: "Motivos de consulta en institución psicoterapéutica de orientación psicoanalítica",
+      detail: "VIII Congreso Marplatense de Psicología de Alcance Internacional · Universidad Nacional de Mar del Plata.",
+      url: ""
+    },
+    {
+      year: "2017",
+      category: "congresos",
+      type: "Comunicación en congreso",
+      status: "Presentación académica",
+      title: "Conexión y relación. Articulaciones a la luz de los dispositivos electrónicos",
+      detail: "VIII Congreso Internacional de Investigación y Práctica Profesional en Psicología · Universidad de Buenos Aires.",
+      url: ""
+    },
+    {
+      year: "2016",
+      category: "congresos",
+      type: "Comunicación en congreso",
+      status: "Presentación académica",
+      title: "Nuevas articulaciones entre la asexualidad y el concepto de sublimación freudiano",
+      detail: "VII Congreso Internacional de Investigación y Práctica Profesional en Psicología · Universidad de Buenos Aires.",
+      url: ""
+    },
+    {
+      year: "2020",
+      category: "formacion",
+      type: "Docencia de extensión",
+      status: "Actividad de formación",
+      title: "Psicoanálisis y género",
+      detail: "Actividad de formación · Instituto Fernando Ulloa.",
+      url: ""
+    },
+    {
+      year: "2018",
+      category: "formacion",
+      type: "Taller",
+      status: "Actividad de formación",
+      title: "Infancias y adolescencias trans: herramientas para el área de educación",
+      detail: "St George’s College.",
+      url: ""
+    }
+  ],
+  experience: [
+    {
+      period: "2023 — ACTUALIDAD",
+      role: "Docente universitario e investigador",
+      org: "Universidad Argentina de la Empresa · UADE",
+      detail: "Docencia en Psicoanálisis I, Psicoanálisis II e Introducción a la Psicología. Participación y dirección de proyectos de investigación y diseño de dispositivos de enseñanza."
+    },
+    {
+      period: "2017 — ACTUALIDAD",
+      role: "Psicólogo clínico",
+      org: "Consultorio particular · CABA",
+      detail: "Atención clínica con orientación psicoanalítica a niños, adolescentes y adultos. Matrícula Nacional 67.794."
+    },
+    {
+      period: "2017 — ACTUALIDAD",
+      role: "Jefe de Trabajos Prácticos, docente e investigador",
+      org: "Universidad de la Marina Mercante · UdeMM",
+      detail: "Desde la graduación en UdeMM: JTP de Fundamentos de Psicoanálisis I y II. Ex docente de la cátedra de Lenguaje y Comunicación. Antecedentes de coordinación del área de Graduados y participación en investigación."
+    },
+    {
+      period: "2026",
+      role: "Docente · Diversidad e Inclusión",
+      org: "UADE Executive Education / Business School",
+      detail: "Formación profesional en diversidad, inclusión y prácticas institucionales."
+    },
+    {
+      period: "2026",
+      role: "Coordinador de grupos terapéuticos",
+      org: "Comunidad Bienestar",
+      detail: "Coordinación de grupos interdisciplinarios y actividades psicoeducativas."
+    },
+    {
+      period: "2017 — 2022",
+      role: "Docente y psicólogo admisor",
+      org: "Instituto Fernando Ulloa",
+      detail: "Admisión clínica, prácticas supervisadas y actualización profesional."
+    }
+  ]
+};
+
+</script>
+<script>
+(()=>{
+  'use strict';
+  const original = window.SITIO;
+  const translations = {"en":{"updated":"October 2026","name":"Guillermo Omar Ferreyra","contact":{"email":"guilleoff@gmail.com"},"research":[{"number":"01","period":"2025 — 2026","place":"UADE · Project A23S17","title":"Online gambling, video games and adolescence","description":"Qualitative research into online gambling, digital purchases and platform dynamics, involving families, teachers and professionals. Includes guidance materials and preventive educational activities.","themes":["Adolescence","Digital platforms","Prevention"],"state":"Research project"},{"number":"02","period":"IN PROGRESS","place":"UNTREF · Master’s in Gender Studies and Policy","title":"Grindr and the construction of a desirable self","description":"Thesis project examining desire, self-presentation and contemporary processes of subject formation among gay men in Buenos Aires, drawing on psychoanalysis, Foucault, Butler and gender studies.","themes":["Subjectivity","Sexuality","Dating apps"],"state":"Master’s thesis project"},{"number":"03","period":"2020 — 2021","place":"UdeMM · Research","title":"Psychotherapy and sexual and gender diversity","description":"Research into patients’ and therapists’ perspectives on whether psychotherapeutic interventions respond appropriately to the experiences of sexual and gender minorities.","themes":["Clinical practice","Diversity","Psychotherapy"],"state":"Research project"},{"number":"04","period":"2018 — 2020","place":"UdeMM · Research","title":"Reasons for seeking psychoanalytic treatment","description":"Study of the reasons adult patients sought treatment at a psychoanalytically oriented psychotherapy institution in Buenos Aires.","themes":["Psychoanalysis","Clinical practice"],"state":"Research project"}],"works":[{"year":"2026","category":"documentos","type":"Guidance document","status":"Prepared document · No public link","title":"Video games, digital purchases and online gambling","detail":"Guidance for families, teachers and professionals developed within UADE project A23S17.","url":""},{"year":"2026","category":"documentos","type":"Academic paper","status":"Accepted for presentation · Publication pending verification","title":"The pedagogy of limits after the business model: online gambling, adolescence and symbolic cleansing devices","detail":"Research and reflection on adult and institutional responsibilities in relation to digital gambling systems.","url":""},{"year":"2018","category":"congresos","type":"Conference presentation","status":"Academic presentation","title":"Reasons for seeking treatment at a psychoanalytically oriented psychotherapy institution","detail":"8th Mar del Plata International Psychology Congress · Universidad Nacional de Mar del Plata.","url":""},{"year":"2017","category":"congresos","type":"Conference presentation","status":"Academic presentation","title":"Connection and relationships: reflections in light of electronic devices","detail":"8th International Congress on Research and Professional Practice in Psychology · Universidad de Buenos Aires.","url":""},{"year":"2016","category":"congresos","type":"Conference presentation","status":"Academic presentation","title":"New connections between asexuality and the Freudian concept of sublimation","detail":"7th International Congress on Research and Professional Practice in Psychology · Universidad de Buenos Aires.","url":""},{"year":"2020","category":"formacion","type":"Continuing education","status":"Training activity","title":"Psychoanalysis and gender","detail":"Educational activity · Instituto Fernando Ulloa.","url":""},{"year":"2018","category":"formacion","type":"Workshop","status":"Training activity","title":"Trans children and adolescents: tools for education professionals","detail":"St George’s College.","url":""}],"experience":[{"period":"2023 — PRESENT","role":"University lecturer and researcher","org":"Universidad Argentina de la Empresa · UADE","detail":"Teaching Psychoanalysis I, Psychoanalysis II and Introduction to Psychology. Participation in and leadership of research projects and development of teaching resources."},{"period":"2017 — PRESENT","role":"Clinical psychologist","org":"Private practice · Buenos Aires","detail":"Psychoanalytically oriented clinical care for children, adolescents and adults. Argentine National License No. 67,794."},{"period":"2017 — PRESENT","role":"Teaching assistant, lecturer and researcher","org":"Universidad de la Marina Mercante · UdeMM","detail":"Since graduating from UdeMM, teaching assistant in Foundations of Psychoanalysis I and II. Former lecturer in Language and Communication. Previous coordination of the Alumni Office and participation in research."},{"period":"2026","role":"Lecturer · Diversity and Inclusion","org":"UADE Executive Education / Business School","detail":"Professional training in diversity, inclusion and institutional practices."},{"period":"2026","role":"Therapeutic group coordinator","org":"Comunidad Bienestar","detail":"Coordination of interdisciplinary groups and psychoeducational activities."},{"period":"2017 — 2022","role":"Clinical supervisor/educator and intake psychologist","org":"Instituto Fernando Ulloa","detail":"Clinical intake, supervised training placements and professional continuing education."}]},"ja":{"updated":"2026年10月","name":"Guillermo Omar Ferreyra","contact":{"email":"guilleoff@gmail.com"},"research":[{"number":"01","period":"2025 — 2026","place":"UADE · 研究プロジェクト A23S17","title":"オンライン賭博、ビデオゲームと思春期・青年期","description":"オンライン賭博、デジタル課金、プラットフォームの仕組みを対象とする質的研究。家庭、教員、専門職への調査をもとに、ガイダンス資料や予防教育活動を展開しています。","themes":["思春期・青年期","デジタルプラットフォーム","予防"],"state":"研究プロジェクト"},{"number":"02","period":"進行中","place":"UNTREF · ジェンダー研究・政策修士課程","title":"Grindrと「望ましい自己」の構築","description":"ブエノスアイレスのゲイ男性における欲望、自己呈示、現代的な主体形成を研究する修士論文計画。精神分析、フーコー、バトラー、ジェンダー研究の議論を参照します。","themes":["主体性","セクシュアリティ","マッチングアプリ"],"state":"修士論文計画"},{"number":"03","period":"2020 — 2021","place":"UdeMM · 研究","title":"心理療法と性・ジェンダーの多様性","description":"性的少数者・ジェンダー少数者の経験に即した心理療法のあり方について、患者と治療者の双方の視点から検討した研究。","themes":["臨床","多様性","心理療法"],"state":"研究プロジェクト"},{"number":"04","period":"2018 — 2020","place":"UdeMM · 研究","title":"精神分析的心理療法における受診動機","description":"ブエノスアイレスの精神分析的心理療法機関を受診した成人の相談・受診動機に関する研究。","themes":["精神分析","臨床実践"],"state":"研究プロジェクト"}],"works":[{"year":"2026","category":"documentos","type":"ガイダンス資料","status":"資料作成済み・公開リンクなし","title":"ビデオゲーム、デジタル課金とオンライン賭博","detail":"UADEの研究プロジェクトA23S17で作成した、家庭・教員・専門職向けガイダンス資料。","url":""},{"year":"2026","category":"documentos","type":"研究論考","status":"発表採択済み・刊行状況は要確認","title":"ビジネスモデルの後の「限界」の教育：オンライン賭博、思春期・青年期、象徴的浄化の装置","detail":"デジタル賭博システムに対する大人と教育・社会機関の責任を論じた研究・考察。","url":""},{"year":"2018","category":"congresos","type":"学会発表","status":"学術発表","title":"精神分析的心理療法機関における受診動機","detail":"第8回マル・デル・プラタ国際心理学会議 · マル・デル・プラタ国立大学。","url":""},{"year":"2017","category":"congresos","type":"学会発表","status":"学術発表","title":"つながりと関係：電子機器を手がかりとした考察","detail":"第8回心理学研究・専門実践国際会議 · ブエノスアイレス大学。","url":""},{"year":"2016","category":"congresos","type":"学会発表","status":"学術発表","title":"無性愛とフロイトの昇華概念の新たな接点","detail":"第7回心理学研究・専門実践国際会議 · ブエノスアイレス大学。","url":""},{"year":"2020","category":"formacion","type":"公開講座","status":"研修活動","title":"精神分析とジェンダー","detail":"教育活動 · フェルナンド・ウジョア研究所。","url":""},{"year":"2018","category":"formacion","type":"ワークショップ","status":"研修活動","title":"トランスジェンダーの子どもと若者：教育現場のためのツール","detail":"セント・ジョージズ・カレッジ。","url":""}],"experience":[{"period":"2023年 — 現在","role":"大学教員・研究者","org":"アルゼンチン企業大学（UADE）","detail":"「精神分析 I・II」「心理学入門」を担当。研究プロジェクトへの参加・主導、教材開発に従事。"},{"period":"2017年 — 現在","role":"臨床心理を専門とする心理士","org":"個人開業 · ブエノスアイレス","detail":"子ども、思春期・青年、成人に対する精神分析的アプローチに基づく臨床実践。アルゼンチン国家資格登録番号67,794。"},{"period":"2017年 — 現在","role":"演習担当教員・大学教員・研究者","org":"マリーナ・メルカンテ大学（UdeMM）","detail":"同大学卒業後、「精神分析の基礎 I・II」で演習を担当。「言語とコミュニケーション」の元担当教員。卒業生部門の運営経験および研究活動歴があります。"},{"period":"2026年","role":"講師・多様性とインクルージョン","org":"UADEエグゼクティブ・エデュケーション","detail":"多様性、インクルージョン、組織内の実践に関する専門職研修。"},{"period":"2026年","role":"治療グループ・コーディネーター","org":"Comunidad Bienestar","detail":"学際的グループの運営と心理教育活動。"},{"period":"2017年 — 2022年","role":"臨床教育担当・初回面接心理士","org":"フェルナンド・ウジョア研究所","detail":"初回面接、臨床実習指導、専門職向け継続教育。"}]}};
+  const staticTranslations = {"en":{"Saltar al contenido":"Skip to content","CLÍNICA · DOCENCIA · INVESTIGACIÓN":"CLINICAL PRACTICE · TEACHING · RESEARCH","MENÚ ☰":"MENU ☰","Perfil":"Profile","Investigación":"Research","Publicaciones":"Publications","Docencia":"Teaching","Trayectoria":"Career","Contacto ↗":"Contact ↗","Perfil académico & profesional · 2026":"Academic & professional profile · 2026","Psicólogo clínico  •  Docente universitario  •  Investigador":"Clinical psychologist · University lecturer · Researcher","Trabajo en la intersección entre":"I work at the intersection of","psicoanálisis, género, educación y tecnologías digitales.":"psychoanalysis, gender, education and digital technologies.","La clínica, la docencia y la investigación como distintas maneras de formular preguntas sobre nuestro tiempo.":"Clinical practice, teaching and research offer different ways to investigate the questions of our time.","EMAIL":"EMAIL","CV EN PDF":"CV (PDF)","BUENOS AIRES / ARGENTINA":"BUENOS AIRES / ARGENTINA","DESPLAZÁ PARA EXPLORAR ↓":"SCROLL TO EXPLORE ↓","Clínica":"Clinical","psicoanalítica":"practice","cualitativa":"Qualitative","Formación":"University","universitaria":"education","01 / Perfil":"01 / Profile","La vida institucional, los vínculos sociales y las tecnologías":"Institutional life, social relationships and technologies","como territorios de lectura clínica y de investigación.":"as fields for clinical inquiry and research.","Soy licenciado en Psicología por la":"I hold a degree in Psychology from the","Universidad de la Marina Mercante":"Universidad de la Marina Mercante","y maestrando en Estudios y Políticas de Género en la":"and am pursuing a master’s degree in Gender Studies and Policy at the","Universidad Nacional de Tres de Febrero":"Universidad Nacional de Tres de Febrero",".":".","Desde 2017 desarrollo práctica clínica y actividad docente universitaria. Investigo problemas vinculados con el psicoanálisis, el género, las adolescencias y las transformaciones de los vínculos mediadas por plataformas digitales.":"Since 2017, I have maintained a clinical practice and taught at university level. My research addresses psychoanalysis, gender, adolescence and how digital platforms reshape interpersonal relationships.","Mi trabajo se articula entre la clínica particular, la docencia en UADE y UdeMM y la producción académica de orientación cualitativa.":"My work combines private clinical practice, teaching at UADE and UdeMM, and qualitative academic research.","PSICOANÁLISIS":"PSYCHOANALYSIS","GÉNERO":"GENDER","CLÍNICA":"CLINICAL PRACTICE","SUBJETIVIDAD DIGITAL":"DIGITAL SUBJECTIVITY","DOCENCIA":"TEACHING","02 / Investigación":"02 / Research","Investigación.":"Research.","Una selección de proyectos institucionales y líneas de trabajo, con sus períodos y estados claramente identificados.":"Selected institutional projects and research interests, with dates and project status clearly identified.","03 / Archivo académico":"03 / Academic archive","Producción académica.":"Academic work.","Todos":"All","Artículos":"Articles","Documentos":"Documents","Congresos":"Conferences","Extensión":"Outreach","Se distinguen las comunicaciones a congresos de los artículos de revista. Los enlaces a textos completos se incorporan solo cuando el material está publicado o autorizado para difusión.":"Conference presentations are distinguished from peer-reviewed journal articles. Full-text links are added only when material has been published or approved for public distribution.","04 / Docencia":"04 / Teaching","Materias dictadas.":"Courses taught.","Materias de grado, formación profesional y extensión universitaria.":"Undergraduate courses, professional training and university outreach.","UADE / CÁTEDRA":"UADE / COURSE","Psicoanálisis I":"Psychoanalysis I","Psicoanálisis II":"Psychoanalysis II","Conceptos fundamentales y su lectura clínica.":"Foundational concepts and their clinical interpretation.","Desarrollos postfreudianos y problemas de la práctica.":"Post-Freudian developments and questions arising in clinical practice.","Introducción a la Psicología":"Introduction to Psychology","Perspectivas, teorías y campos de intervención.":"Approaches, theories and areas of professional practice.","UDEMM / JTP · DESDE 2017":"UDEMM / TEACHING ASSISTANT · SINCE 2017","Fundamentos de Psicoanálisis I":"Foundations of Psychoanalysis I","Fundamentos de Psicoanálisis II":"Foundations of Psychoanalysis II","Docencia y acompañamiento académico en formación de grado.":"Teaching and academic support in undergraduate education.","Continuidad docente en el área de psicoanálisis.":"Ongoing teaching in psychoanalysis.","UDEMM / ANTECEDENTE":"UDEMM / PREVIOUS APPOINTMENT","Lenguaje y Comunicación":"Language and Communication","Ex docente de la cátedra.":"Former course lecturer.","05 / Trayectoria profesional":"05 / Professional career","Experiencia profesional.":"Professional experience.","Experiencia clínica, docencia, investigación y coordinación de dispositivos grupales.":"Clinical practice, university teaching, research and coordination of group-based programs.","FORMACIÓN / POSGRADO":"EDUCATION / POSTGRADUATE","Maestría en Estudios y Políticas de Género":"Master’s in Gender Studies and Policy","Universidad Nacional de Tres de Febrero · En curso.":"Universidad Nacional de Tres de Febrero · In progress.","FORMACIÓN / GRADO":"EDUCATION / UNDERGRADUATE","Licenciatura en Psicología":"Degree in Psychology","Universidad de la Marina Mercante · 2012–2017. Promedio general: 8,0.":"Universidad de la Marina Mercante · 2012–2017. Cumulative grade average: 8.0/10.","06 / En desarrollo":"06 / Current projects","Proyectos actuales.":"Current projects.","Un registro de proyectos actuales. No reemplaza el CV ni el archivo de producción formal.":"An overview of ongoing projects; it does not replace the CV or the formal academic record.","INVESTIGACIÓN / 2026":"RESEARCH / 2026","Adolescencias, videojuegos y apuestas":"Adolescents, video games and online gambling","Investigación y elaboración de materiales de orientación para familias e instituciones educativas.":"Research and development of guidance materials for families and educational institutions.","TESIS / EN DESARROLLO":"THESIS / IN PROGRESS","Grindr y subjetividad":"Grindr and subjectivity","Proyecto de tesis sobre la construcción de un yo deseable y las prácticas de presentación de sí.":"Thesis project on the construction of a desirable self and practices of self-presentation.","07 / Contacto":"07 / Contact","Continuemos la":"Let’s continue the","conversación.":"conversation.","Para consultas académicas, colaboración en investigaciones, actividades de formación y proyectos institucionales.":"For academic inquiries, research collaborations, training activities and institutional projects.","GUILLERMO OMAR FERREYRA · BUENOS AIRES":"GUILLERMO OMAR FERREYRA · BUENOS AIRES","ACTUALIZACIÓN:":"UPDATED:","OCTUBRE 2026":"OCTOBER 2026","VOLVER ARRIBA ↑":"BACK TO TOP ↑"},"ja":{"Saltar al contenido":"本文へスキップ","CLÍNICA · DOCENCIA · INVESTIGACIÓN":"臨床・教育・研究","MENÚ ☰":"メニュー ☰","Perfil":"プロフィール","Investigación":"研究","Publicaciones":"業績","Docencia":"教育","Trayectoria":"経歴","Contacto ↗":"お問い合わせ ↗","Perfil académico & profesional · 2026":"学術・専門職プロフィール · 2026","Psicólogo clínico  •  Docente universitario  •  Investigador":"臨床心理を専門とする心理士・大学教員・研究者","Trabajo en la intersección entre":"私の活動領域は","psicoanálisis, género, educación y tecnologías digitales.":"精神分析、ジェンダー、教育、デジタル技術の交差点にあります。","La clínica, la docencia y la investigación como distintas maneras de formular preguntas sobre nuestro tiempo.":"臨床、教育、研究という異なる実践を通じて、現代社会への問いを探究しています。","EMAIL":"メール","CV EN PDF":"履歴書・業績書 PDF","BUENOS AIRES / ARGENTINA":"アルゼンチン／ブエノスアイレス","DESPLAZÁ PARA EXPLORAR ↓":"下にスクロール ↓","Clínica":"臨床","psicoanalítica":"精神分析","cualitativa":"質的研究","Formación":"大学","universitaria":"教育","01 / Perfil":"01 / プロフィール","La vida institucional, los vínculos sociales y las tecnologías":"制度・社会的つながり・テクノロジーを","como territorios de lectura clínica y de investigación.":"臨床と研究の視点から読み解く。","Soy licenciado en Psicología por la":"私は","Universidad de la Marina Mercante":"マリーナ・メルカンテ大学","y maestrando en Estudios y Políticas de Género en la":"で心理学の学士号を取得し、現在は","Universidad Nacional de Tres de Febrero":"トレス・デ・フェブレロ国立大学",".":"でジェンダー研究・政策の修士課程に在籍しています。","Desde 2017 desarrollo práctica clínica y actividad docente universitaria. Investigo problemas vinculados con el psicoanálisis, el género, las adolescencias y las transformaciones de los vínculos mediadas por plataformas digitales.":"2017年より臨床実践と大学教育に従事しています。研究では、精神分析、ジェンダー、思春期・青年期、そしてデジタルプラットフォームが人間関係にもたらす変化を扱っています。","Mi trabajo se articula entre la clínica particular, la docencia en UADE y UdeMM y la producción académica de orientación cualitativa.":"個人臨床、UADEおよびUdeMMでの大学教育、質的研究を軸に活動しています。","PSICOANÁLISIS":"精神分析","GÉNERO":"ジェンダー","CLÍNICA":"臨床","SUBJETIVIDAD DIGITAL":"デジタル時代の主体性","DOCENCIA":"教育","02 / Investigación":"02 / 研究","Investigación.":"研究","Una selección de proyectos institucionales y líneas de trabajo, con sus períodos y estados claramente identificados.":"所属機関での研究プロジェクトと研究テーマを、実施期間および進捗状況とともに紹介します。","03 / Archivo académico":"03 / 研究・業績アーカイブ","Producción académica.":"研究・学術業績","Todos":"すべて","Artículos":"論文","Documentos":"資料","Congresos":"学会発表","Extensión":"公開講座・社会連携","Se distinguen las comunicaciones a congresos de los artículos de revista. Los enlaces a textos completos se incorporan solo cuando el material está publicado o autorizado para difusión.":"学会発表と学術誌掲載論文は区別して表示しています。全文へのリンクは、公開済みまたは公開許可を得た資料に限って掲載します。","04 / Docencia":"04 / 担当科目","Materias dictadas.":"担当科目","Materias de grado, formación profesional y extensión universitaria.":"学部科目、専門職研修、大学の公開教育活動。","UADE / CÁTEDRA":"UADE／担当科目","Psicoanálisis I":"精神分析 I","Psicoanálisis II":"精神分析 II","Conceptos fundamentales y su lectura clínica.":"基本概念と臨床的な読解。","Desarrollos postfreudianos y problemas de la práctica.":"フロイト以後の理論的展開と臨床実践上の課題。","Introducción a la Psicología":"心理学入門","Perspectivas, teorías y campos de intervención.":"理論的視点、学説、心理学の実践領域。","UDEMM / JTP · DESDE 2017":"UdeMM／演習担当教員・2017年より","Fundamentos de Psicoanálisis I":"精神分析の基礎 I","Fundamentos de Psicoanálisis II":"精神分析の基礎 II","Docencia y acompañamiento académico en formación de grado.":"学部教育での授業と学修支援。","Continuidad docente en el área de psicoanálisis.":"精神分析領域における継続的な教育活動。","UDEMM / ANTECEDENTE":"UdeMM／過去の担当科目","Lenguaje y Comunicación":"言語とコミュニケーション","Ex docente de la cátedra.":"以前に担当した科目。","05 / Trayectoria profesional":"05 / 職歴","Experiencia profesional.":"職務経験","Experiencia clínica, docencia, investigación y coordinación de dispositivos grupales.":"臨床実践、大学教育、研究、グループ支援プログラムの運営経験。","FORMACIÓN / POSGRADO":"学歴／大学院","Maestría en Estudios y Políticas de Género":"ジェンダー研究・政策修士課程","Universidad Nacional de Tres de Febrero · En curso.":"トレス・デ・フェブレロ国立大学・在学中。","FORMACIÓN / GRADO":"学歴／学士","Licenciatura en Psicología":"心理学学士","Universidad de la Marina Mercante · 2012–2017. Promedio general: 8,0.":"マリーナ・メルカンテ大学・2012〜2017年。総合成績平均8.0／10。","06 / En desarrollo":"06 / 進行中のプロジェクト","Proyectos actuales.":"現在のプロジェクト","Un registro de proyectos actuales. No reemplaza el CV ni el archivo de producción formal.":"進行中のプロジェクトの概要です。正式な履歴書・業績一覧に代わるものではありません。","INVESTIGACIÓN / 2026":"研究／2026年","Adolescencias, videojuegos y apuestas":"思春期・青年期、ゲーム、オンライン賭博","Investigación y elaboración de materiales de orientación para familias e instituciones educativas.":"家庭や教育機関向けの支援資料の研究・作成。","TESIS / EN DESARROLLO":"修士論文／執筆準備中","Grindr y subjetividad":"Grindrと主体性","Proyecto de tesis sobre la construcción de un yo deseable y las prácticas de presentación de sí.":"望ましい自己像の構築と自己呈示の実践をめぐる修士論文計画。","07 / Contacto":"07 / お問い合わせ","Continuemos la":"ご連絡","conversación.":"ください。","Para consultas académicas, colaboración en investigaciones, actividades de formación y proyectos institucionales.":"学術的なお問い合わせ、共同研究、研修活動、機関間プロジェクトに関するご連絡をお待ちしています。","GUILLERMO OMAR FERREYRA · BUENOS AIRES":"ギジェルモ・オマール・フェレイラ · ブエノスアイレス","ACTUALIZACIÓN:":"最終更新：","OCTUBRE 2026":"2026年10月","VOLVER ARRIBA ↑":"ページ上部へ ↑"}};
+  const titles = {
+    es:'Guillermo Ferreyra — Psicología · Docencia · Investigación',
+    en:'Guillermo Ferreyra — Psychology · Teaching · Research',
+    ja:'ギジェルモ・フェレイラ — 心理学・教育・研究'
+  };
+  const descriptions = {
+    es:'Guillermo Omar Ferreyra, psicólogo clínico, docente universitario e investigador en Buenos Aires. Docencia, investigación y archivo académico.',
+    en:'Guillermo Omar Ferreyra, clinical psychologist, university lecturer and researcher in Buenos Aires. Academic profile, research and publications.',
+    ja:'ブエノスアイレスを拠点とする臨床心理を専門とする心理士・大学教員・研究者、ギジェルモ・オマール・フェレイラの学術・専門職プロフィール。'
+  };
+  const safeUrl=url=>{try{return new URL(url).protocol==='https:'}catch{return false}};
+  const make=(tag,cls,value)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined)el.textContent=String(value);return el};
+  const research=document.getElementById('research-list');
+  const works=document.getElementById('work-list');
+  const exp=document.getElementById('experience-list');
+  const buttons=[...document.querySelectorAll('[data-filter]')];
+  const btn=document.querySelector('.menu-button');
+  const nav=document.getElementById('nav');
+  let currentFilter='todos';
+  let currentLanguage='es';
+  const skipTags=new Set(['SCRIPT','STYLE','NOSCRIPT']);
+  // Save original source nodes BEFORE any dynamically translated data is rendered.
+  const staticNodes=[];
+  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+  let node;
+  while((node=walker.nextNode())){
+    const originalText=node.textContent;
+    if(!originalText.trim() || skipTags.has(node.parentElement?.tagName))continue;
+    staticNodes.push([node,originalText]);
+  }
+  function translateStatic(lang){
+    const terms=staticTranslations[lang]||{};
+    staticNodes.forEach(([node,base])=>{
+      const core=base.trim();
+      // Phrase-specific word order in the three-line discipline strip.
+      const motto=node.parentElement?.closest('.motto-item');
+      const context=lang==='en'&&motto&&motto.querySelector('.motto-number')?.textContent==='02';
+      if(context&&core==='Investigación'){node.textContent=base.replace(core,'Qualitative');return;}
+      if(context&&core==='cualitativa'){node.textContent=base.replace(core,'research');return;}
+      if(lang==='en'&&motto&&core==='Clínica'){node.textContent=base.replace(core,'Psychoanalytic');return;}
+      if(lang==='en'&&motto&&core==='psicoanalítica'){node.textContent=base.replace(core,'practice');return;}
+      if(lang==='ja'&&motto&&core==='Clínica'){node.textContent=base.replace(core,'精神分析的');return;}
+      if(lang==='ja'&&motto&&core==='psicoanalítica'){node.textContent=base.replace(core,'臨床');return;}
+      if(Object.hasOwn(terms,core)){
+        const i=base.indexOf(core);
+        node.textContent=base.slice(0,i)+terms[core]+base.slice(i+core.length);
+      }else node.textContent=base;
+    });
+  }
+  function localeData(){return currentLanguage==='es'?original:translations[currentLanguage]}
+  function renderResearch(d){
+    research.replaceChildren();
+    d.research.forEach(r=>{
+      const card=make('article','research-card');
+      const top=make('div','research-top');top.append(make('span','',r.number+' / '+r.period),make('span','',r.state));
+      card.append(top,make('h3','',r.title),make('p','',r.description));
+      const bottom=make('div','research-bottom');bottom.append(make('span','',r.place),make('small','',r.themes.join(' · ')));
+      card.append(bottom);research.append(card);
+    });
+  }
+  function renderWorks(d){
+    works.replaceChildren();
+    const selected=d.works.filter(w=>currentFilter==='todos'||w.category===currentFilter);
+    const noun=currentLanguage==='ja'?'件':currentLanguage==='en'?(selected.length===1?'WORK':'WORKS'):(selected.length===1?'TRABAJO':'TRABAJOS');
+    const suffix=currentLanguage==='ja'?' / アーカイブ':currentLanguage==='en'?' / ARCHIVE':' / ARCHIVO';
+    document.getElementById('result-count').textContent=(currentLanguage==='ja'?selected.length+noun:selected.length+' '+noun)+suffix;
+    if(!selected.length){
+      const message={es:'Todavía no se registran artículos científicos publicados con referencia verificable.',en:'No published journal articles with verifiable references have been added yet.',ja:'検証可能な書誌情報を伴う学術誌掲載論文は、まだ登録されていません。'};
+      works.append(make('p','no-results',message[currentLanguage]));return;
+    }
+    selected.forEach(w=>{
+      const row=make('article','work-entry'),body=make('div',''),title=make('h3','');
+      if(w.url&&safeUrl(w.url)){const a=make('a','',w.title+' ↗');a.href=w.url;a.rel='noopener noreferrer';a.target='_blank';title.append(a)}
+      else title.textContent=w.title;
+      body.append(title,make('p','',w.detail),make('span','work-status',w.status));
+      row.append(make('span','work-year',w.year),body,make('span','work-type',w.type));works.append(row);
+    });
+  }
+  function renderExperience(d){
+    exp.replaceChildren();
+    d.experience.forEach(x=>{
+      const row=make('article','career-row'),middle=make('div','');
+      middle.append(make('h3','',x.role),make('div','career-org',x.org));
+      row.append(make('time','career-year',x.period),middle,make('p','',x.detail));exp.append(row);
+    });
+  }
+  function menu(isOpen){
+    nav.classList.toggle('open',isOpen);btn.setAttribute('aria-expanded',String(isOpen));
+    const t={es:isOpen?'CERRAR ×':'MENÚ ☰',en:isOpen?'CLOSE ×':'MENU ☰',ja:isOpen?'閉じる ×':'メニュー ☰'};
+    btn.textContent=t[currentLanguage];
+  }
+  function setLanguage(lang){
+    if(!['es','en','ja'].includes(lang))lang='es';
+    currentLanguage=lang;
+    document.documentElement.lang=lang==='es'?'es-AR':lang;
+    document.title=titles[lang];
+    document.querySelector('meta[name="description"]').content=descriptions[lang];
+    document.querySelector('meta[property="og:title"]').content=titles[lang];
+    document.querySelector('meta[property="og:description"]').content=descriptions[lang];
+    translateStatic(lang);
+    const d=localeData();renderResearch(d);renderWorks(d);renderExperience(d);
+    document.getElementById('updated').textContent=d.updated.toUpperCase();
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.querySelectorAll('.lang-option').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));
+    document.querySelector('.lang-switch').setAttribute('aria-label',{es:'Seleccionar idioma',en:'Choose language',ja:'言語を選択'}[lang]);
+    nav.setAttribute('aria-label',{es:'Navegación principal',en:'Main navigation',ja:'メインナビゲーション'}[lang]);
+    document.querySelector('.brand').setAttribute('aria-label',{es:'Volver al inicio',en:'Back to the homepage',ja:'ページの先頭へ戻る'}[lang]);
+    document.querySelector('.filters').setAttribute('aria-label',{es:'Filtrar trabajos',en:'Filter works',ja:'業績を絞り込む'}[lang]);
+    btn.setAttribute('aria-controls','nav');
+    menu(nav.classList.contains('open'));
+    try{localStorage.setItem('cv-lang',lang)}catch(e){}
+  }
+  buttons.forEach(b=>b.addEventListener('click',()=>{
+    currentFilter=b.dataset.filter;
+    buttons.forEach(other=>{
+      const active=other===b;
+      other.classList.toggle('active',active);
+      other.setAttribute('aria-pressed',String(active));
+    });
+    renderWorks(localeData());
+  }));
+  document.querySelectorAll('.lang-option').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
+  btn.addEventListener('click',()=>menu(!nav.classList.contains('open')));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+  let initial='es';
+  try{initial=localStorage.getItem('cv-lang')||'es'}catch(e){}
+  const requested=new URLSearchParams(location.search).get('lang');
+  if(['es','en','ja'].includes(requested))initial=requested;
+  setLanguage(initial);
+})();
+</script>
+</body>
+</html>

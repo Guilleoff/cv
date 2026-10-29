@@ -1,28 +1,26 @@
-# Guillermo Omar Ferreyra — CV web definitivo
+# Guillermo Omar Ferreyra — sitio profesional trilingüe
 
-Sitio profesional trilingüe y minimalista, con paleta verde bosque, verde salvia y detalles dorados.
+Edición verde bosque y dorado, diseñada como una secuencia de **paneles de pantalla completa** con desplazamiento vertical suave, cuidando la lectura completa en celulares.
+
+## Archivos
+
+- `index.html`: sitio estático autocontenido (HTML + estilos + JavaScript + textos en ES / EN / 日本語).
+- `CV_Guillermo_Omar_Ferreyra_2026.pdf`: CV académico descargable.
+- `README.md`: instrucciones.
 
 ## Contenido
 
-- `index.html` — web completa. El diseño, los textos y las traducciones ES / EN / 日本語 están integrados en el mismo archivo.
-- `CV_Guillermo_Omar_Ferreyra_2026.pdf` — CV académico descargable en español.
-- `README.md` — estas instrucciones.
+Se recupera la presentación extensa anterior: perfil, cinco investigaciones, producción académica cronológica, seis materias, cuatro tutorías de TIF, trayectoria, proyectos actuales y contacto. Se mantiene el acceso a la agenda clínica y se retira el sello «GF» de la cabecera.
 
-La barra superior incluye **Consulta clínica**, que abre directamente la agenda pública de citas: https://calendar.app.google/ofa1dhA9fRYjC2UP6
+Los paneles tienen al menos la altura visible de la pantalla. Cuando una sección necesita más espacio (por ejemplo, la lista completa de congresos en un teléfono), se expande verticalmente para que ningún texto quede cortado. La navegación tiene anclajes y desplazamiento suave; el desplazamiento respeta accesibilidad y movimiento reducido.
 
-## Publicación en GitHub
+## Publicar en GitHub Pages
 
-Repositorio: https://github.com/Guilleoff/cv
+1. Entrar a https://github.com/Guilleoff/cv
+2. Reemplazar `index.html` y `CV_Guillermo_Omar_Ferreyra_2026.pdf` con los archivos incluidos aquí. Podés actualizar `README.md` también.
+3. Confirmar los cambios (Commit changes).
+4. Abrir https://guilleoff.github.io/cv/ y, si es necesario, recargar sin caché (Ctrl+Shift+R).
 
-1. Descomprimir el ZIP.
-2. Entrar en el repositorio y reemplazar los archivos `index.html`, `CV_Guillermo_Omar_Ferreyra_2026.pdf` y `README.md` por los del ZIP.
-3. Confirmar los cambios (**Commit changes**).
-4. Visitar https://guilleoff.github.io/cv/ y actualizar el navegador cuando GitHub complete el despliegue.
+La agenda clínica enlaza a https://calendar.app.google/ofa1dhA9fRYjC2UP6.
 
-Si abrís `index.html` por separado en tu computadora, el diseño y las traducciones funcionan sin un servidor.
-
-## Actualización
-
-El contenido académico y las traducciones en inglés y japonés se encuentran dentro de `index.html`, en los objetos `window.SITIO`, `translations` y `staticTranslations`.
-
-No se han incluido referencias a inteligencia artificial ni advertencias editoriales en la página pública. Los datos clínicos de terceros no están publicados.
+El sitio no incluye declaraciones sobre inteligencia artificial ni comentarios editoriales de verificación. El PDF no ha cambiado respecto de la última edición académica revisada.

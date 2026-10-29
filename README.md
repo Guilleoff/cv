@@ -22,9 +22,15 @@ Para tu repositorio `Guilleoff/cv`, subí `index.html` y el PDF al directorio ra
 
 ## Tutorías de Trabajos Integradores Finales — UdeMM
 
-Se incorporó una selección de tres tutorías académicas acreditadas / informadas:
+Se incorporó una selección de cuatro tutorías académicas acreditadas / informadas:
 - **2020** · Marta Alicia Aguirre · «El Estrago Materno en adolescentes de 13 a 20 años».
 - **2021** · Verónica Paola Stigliani · «Estereotipos de Género en Mujeres Heterocisgénero que ejercen Psicoanálisis».
 - **2022** · Liliana Finger · «Expresiones afectivas e inhibiciones en masculinidades cisgeneros de más de 50 años».
 
 La función está identificada como tutoría/dirección de TIF de grado y no como autoría de publicaciones propias. Se omiten legajos, evaluaciones y archivos académicos internos de las estudiantes. El contenido de la nueva sección se traduce al inglés y japonés mediante el mismo selector del resto del sitio.
+
+## Actualización de tutorías (octubre 2026)
+
+- Se agregó el TIF finalizado «Discriminación y Transexualidad» (María Alejandra Arrué, UdeMM, 2020), bajo la tutoría de Guillermo Ferreyra.
+- Se eliminó la frase auxiliar de la cabecera de Investigación, en los tres idiomas.
+- Los documentos internos del trabajo (legajo, DNI, formularios de evaluación) no están incluidos en los archivos públicos.
